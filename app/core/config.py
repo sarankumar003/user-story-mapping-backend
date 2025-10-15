@@ -39,7 +39,7 @@ except ImportError:
     JIRA_PROJECT_KEY = "CRAYOT"
     STORAGE_BASE_PATH = "./data/runs"
     UPLOAD_MAX_SIZE = 10 * 1024 * 1024  # 10MB
-    ALLOWED_FILE_TYPES = ".pdf", ".docx", ".doc"
+    ALLOWED_FILE_TYPES = ".pdf,.docx,.doc"
     ALLOWED_ORIGINS = ""
     MAX_RUN_HISTORY = 50
 
