@@ -1,0 +1,659 @@
+{
+  "document_id": "15d42416-e308-4274-a2c8-f3eaf23db364",
+  "created_at": "2025-09-30T09:37:37.052788",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "title": "Task Management Core Functionality",
+      "description": "Develop the core features of the To-Do List application, enabling users to add, edit, mark as completed, and delete tasks. This epic is critical to deliver the main business value: allowing users to efficiently manage their daily tasks.",
+      "priority": "Critical",
+      "estimated_hours": 80,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "FE-1",
+          "title": "Add New Task",
+          "description": "As a user, I want to add a new task with a title and optional description so that I can keep track of things I need to do.",
+          "acceptance_criteria": [
+            "User can enter a task title (required) and description (optional)",
+            "Task is added to the list upon submission",
+            "Input fields are cleared after adding",
+            "Error is shown if title is missing"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 12,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "FE-1-1",
+              "title": "Design Add Task UI",
+              "description": "Create wireframes and UI components for the add task form, ensuring accessibility and responsiveness.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-1-2",
+              "title": "Implement Add Task Functionality (Frontend)",
+              "description": "Develop the frontend logic to capture user input and trigger task creation.",
+              "priority": "Critical",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-1-1",
+              "title": "Implement Add Task API (Backend)",
+              "description": "Create backend endpoint to accept new task data and store it in the database.",
+              "priority": "Critical",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-1-1",
+              "title": "Test Add Task Feature",
+              "description": "Write and execute test cases to verify task creation, validation, and error handling.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "FE-2",
+          "title": "Edit Task",
+          "description": "As a user, I want to edit an existing task's title or description so that I can update my tasks as needed.",
+          "acceptance_criteria": [
+            "User can open an edit form for any task",
+            "User can update the title and/or description",
+            "Changes are saved and reflected in the task list",
+            "Error is shown if title is empty"
+          ],
+          "priority": "High",
+          "estimated_hours": 10,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "FE-2-1",
+              "title": "Design Edit Task UI",
+              "description": "Create UI for editing tasks, including modal or inline editing options.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-2-2",
+              "title": "Implement Edit Task Functionality (Frontend)",
+              "description": "Develop frontend logic to allow users to edit and save changes to tasks.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-2-1",
+              "title": "Implement Edit Task API (Backend)",
+              "description": "Create backend endpoint to update task details in the database.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-2-1",
+              "title": "Test Edit Task Feature",
+              "description": "Write and execute test cases for editing tasks, including validation and error handling.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "FE-3",
+          "title": "Mark Task as Completed",
+          "description": "As a user, I want to mark a task as completed so that I can track my progress.",
+          "acceptance_criteria": [
+            "User can mark any task as completed",
+            "Completed tasks are visually distinguished",
+            "User can unmark a completed task"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "FE-3-1",
+              "title": "Design Completed Task UI",
+              "description": "Design visual indicators for completed tasks (e.g., strikethrough, color change).",
+              "priority": "Medium",
+              "estimated_hours": 1,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-3-2",
+              "title": "Implement Mark as Completed (Frontend)",
+              "description": "Develop frontend logic to toggle task completion status.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-3-1",
+              "title": "Implement Mark as Completed API (Backend)",
+              "description": "Create backend endpoint to update task completion status.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-3-1",
+              "title": "Test Mark as Completed Feature",
+              "description": "Write and execute test cases for marking tasks as completed and uncompleted.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "FE-4",
+          "title": "Delete Task",
+          "description": "As a user, I want to delete a task so that I can remove tasks I no longer need.",
+          "acceptance_criteria": [
+            "User can delete any task",
+            "Deleted tasks are removed from the list",
+            "User is prompted to confirm deletion"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "FE-4-1",
+              "title": "Design Delete Task UI",
+              "description": "Design delete button and confirmation dialog for task deletion.",
+              "priority": "Medium",
+              "estimated_hours": 1,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-4-2",
+              "title": "Implement Delete Task Functionality (Frontend)",
+              "description": "Develop frontend logic to trigger task deletion and update the UI.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-4-1",
+              "title": "Implement Delete Task API (Backend)",
+              "description": "Create backend endpoint to delete tasks from the database.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-4-1",
+              "title": "Test Delete Task Feature",
+              "description": "Write and execute test cases for deleting tasks and handling errors.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-2",
+      "title": "Task List Display and User Experience",
+      "description": "Implement the task list display and ensure a responsive, intuitive user experience across desktop and mobile browsers. This epic ensures users can easily view and interact with their tasks.",
+      "priority": "High",
+      "estimated_hours": 40,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "FE-5",
+          "title": "Display All Tasks in a List",
+          "description": "As a user, I want to see all my tasks in a list so that I can easily review and manage them.",
+          "acceptance_criteria": [
+            "All tasks are displayed in a scrollable list",
+            "Each task shows title, description, and completion status",
+            "List updates in real-time as tasks are added, edited, completed, or deleted"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 10,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "FE-5-1",
+              "title": "Design Task List UI",
+              "description": "Create wireframes and UI components for the task list, ensuring clarity and accessibility.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-5-2",
+              "title": "Implement Task List Rendering (Frontend)",
+              "description": "Develop frontend logic to render the task list and update it dynamically.",
+              "priority": "Critical",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-5-1",
+              "title": "Implement Get Tasks API (Backend)",
+              "description": "Create backend endpoint to fetch all tasks from the database.",
+              "priority": "Critical",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-5-1",
+              "title": "Test Task List Display",
+              "description": "Write and execute test cases for task list rendering and real-time updates.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "UX-1",
+          "title": "Responsive Design for Desktop and Mobile",
+          "description": "As a user, I want the app to work seamlessly on both desktop and mobile browsers so that I can manage tasks from any device.",
+          "acceptance_criteria": [
+            "App layout adapts to different screen sizes",
+            "All features are accessible and usable on mobile devices",
+            "No horizontal scrolling required on mobile"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "UX-1-1",
+              "title": "Design Responsive Layout",
+              "description": "Create responsive design mockups for key screens.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-6-1",
+              "title": "Implement Responsive Styles",
+              "description": "Develop CSS and frontend logic to ensure responsive behavior.",
+              "priority": "High",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-6-1",
+              "title": "Test Responsiveness",
+              "description": "Test app on various devices and browsers for responsive design compliance.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "UX-2",
+          "title": "User Experience and Accessibility Enhancements",
+          "description": "As a user, I want the app to be easy to use and accessible so that everyone can manage their tasks efficiently.",
+          "acceptance_criteria": [
+            "App meets WCAG 2.1 AA accessibility standards",
+            "Keyboard navigation is supported",
+            "Clear focus indicators and ARIA labels are present"
+          ],
+          "priority": "Medium",
+          "estimated_hours": 6,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "UX-2-1",
+              "title": "Accessibility Audit",
+              "description": "Review UI components for accessibility compliance.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-7-1",
+              "title": "Implement Accessibility Improvements",
+              "description": "Add ARIA labels, focus indicators, and keyboard navigation support.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-7-1",
+              "title": "Accessibility Testing",
+              "description": "Test app for accessibility using screen readers and keyboard navigation.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QA-8",
+          "title": "Performance Optimization",
+          "description": "As a user, I want the app to load quickly (within 3 seconds) so that I can access my tasks without delay.",
+          "acceptance_criteria": [
+            "App loads within 3 seconds on standard broadband/mobile connections",
+            "All assets are optimized for fast loading"
+          ],
+          "priority": "High",
+          "estimated_hours": 6,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "FE-8-1",
+              "title": "Optimize Frontend Assets",
+              "description": "Minify and bundle JS/CSS, optimize images, and implement lazy loading where appropriate.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-8-1",
+              "title": "Optimize Backend Performance",
+              "description": "Ensure backend APIs respond quickly and efficiently.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-8-1",
+              "title": "Performance Testing",
+              "description": "Test app load times and optimize as needed.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-3",
+      "title": "Infrastructure, Deployment, and Quality Assurance",
+      "description": "Set up the technical infrastructure, deployment pipelines, and quality assurance processes to ensure the To-Do List app is robust, maintainable, and easy to deploy.",
+      "priority": "High",
+      "estimated_hours": 30,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "DEVOPS-1",
+          "title": "Set Up Development and Production Environments",
+          "description": "As a developer, I want reliable environments for development, testing, and production so that the app can be built, tested, and deployed efficiently.",
+          "acceptance_criteria": [
+            "Development, staging, and production environments are available",
+            "Automated deployment pipeline is set up",
+            "Environment variables are managed securely"
+          ],
+          "priority": "High",
+          "estimated_hours": 10,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "DEVOPS-1-1",
+              "title": "Provision Cloud Infrastructure",
+              "description": "Set up cloud resources (e.g., hosting, database, storage) for all environments.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DEVOPS-1-2",
+              "title": "Configure CI/CD Pipeline",
+              "description": "Implement continuous integration and deployment pipeline for automated builds and deployments.",
+              "priority": "High",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DEVOPS-1-3",
+              "title": "Manage Environment Variables",
+              "description": "Set up secure management of environment variables for all environments.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QA-9",
+          "title": "Automated Testing and Quality Assurance",
+          "description": "As a QA engineer, I want automated tests for all core features so that regressions are caught early and the app remains stable.",
+          "acceptance_criteria": [
+            "Unit tests cover all core business logic",
+            "Integration tests cover API endpoints",
+            "End-to-end tests cover main user flows"
+          ],
+          "priority": "High",
+          "estimated_hours": 10,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "QA-9-1",
+              "title": "Write Unit Tests",
+              "description": "Develop unit tests for frontend and backend business logic.",
+              "priority": "High",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-9-2",
+              "title": "Write Integration Tests",
+              "description": "Develop integration tests for API endpoints.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-9-3",
+              "title": "Write End-to-End Tests",
+              "description": "Develop end-to-end tests for main user flows using a tool like Cypress or Selenium.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "PM-1",
+          "title": "Product Management and Documentation",
+          "description": "As a product manager, I want clear documentation and project tracking so that the team can deliver on time and stakeholders are informed.",
+          "acceptance_criteria": [
+            "Project plan and timeline are documented",
+            "Feature documentation is available",
+            "Release notes are published for each version"
+          ],
+          "priority": "Medium",
+          "estimated_hours": 6,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "PM-1-1",
+              "title": "Create Project Plan and Timeline",
+              "description": "Document project milestones, deliverables, and estimated timelines.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-1-2",
+              "title": "Write Feature Documentation",
+              "description": "Document all features, user stories, and acceptance criteria.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-1-3",
+              "title": "Publish Release Notes",
+              "description": "Prepare and distribute release notes for each app version.",
+              "priority": "Low",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "IT-1",
+          "title": "Security and Compliance Review",
+          "description": "As an IT/security specialist, I want to ensure the app follows security best practices and complies with relevant standards.",
+          "acceptance_criteria": [
+            "App does not expose sensitive data",
+            "All dependencies are up to date and free of known vulnerabilities",
+            "Basic data privacy practices are followed"
+          ],
+          "priority": "Medium",
+          "estimated_hours": 4,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "IT-1-1",
+              "title": "Conduct Security Audit",
+              "description": "Review codebase and infrastructure for security vulnerabilities.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "IT-1-2",
+              "title": "Update Dependencies",
+              "description": "Ensure all libraries and dependencies are up to date.",
+              "priority": "Medium",
+              "estimated_hours": 1,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "IT-1-3",
+              "title": "Document Data Privacy Practices",
+              "description": "Document how user data is handled and stored.",
+              "priority": "Low",
+              "estimated_hours": 1,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "total_estimated_hours": 150,
+  "timeline_weeks": 6
+}

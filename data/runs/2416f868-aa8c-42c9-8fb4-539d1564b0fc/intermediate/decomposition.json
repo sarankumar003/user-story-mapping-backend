@@ -1,0 +1,1204 @@
+{
+  "document_id": "2416f868-aa8c-42c9-8fb4-539d1564b0fc",
+  "created_at": "2025-09-29T21:08:29.846635",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "title": "Centralized Offer Recommendation Engine (Choice API)",
+      "description": "Develop and deploy a centralized offer recommendation engine (Choice API) to unify and personalize offer delivery across HDFC Bank's digital assets. This engine will ensure a single source of truth for offers, enable real-time and batch-based recommendations, and support business rules for curation and personalization. Business justification: Ensures offer consistency, increases engagement, and supports scalable, intelligent offer delivery.",
+      "priority": "Critical",
+      "estimated_hours": 320,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "BE-1",
+          "title": "Develop Offer Recommendation Engine Core",
+          "description": "Build the backend logic for the offer recommendation engine, including rule engine, personalization logic, and merchant/offer curation (repeat capping, fatigue factor, marketer’s veto).",
+          "acceptance_criteria": [
+            "Engine supports rule-based and personalized recommendations.",
+            "Supports merchant and offer curation logic.",
+            "Handles up to 10 million API calls/month.",
+            "Unit and integration tests pass for all business rules."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 120,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "BE-1-1",
+              "title": "Design Recommendation Engine Architecture",
+              "description": "Define architecture, data flows, and integration points for the recommendation engine.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-1-2",
+              "title": "Implement Rule Engine",
+              "description": "Develop the rule engine to support offer selection, curation, and prioritization.",
+              "priority": "Critical",
+              "estimated_hours": 40,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-1-3",
+              "title": "Integrate Personalization Logic",
+              "description": "Implement logic for personalized recommendations based on customer data and preferences.",
+              "priority": "High",
+              "estimated_hours": 32,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-1-4",
+              "title": "Develop Merchant/Offer Curation Features",
+              "description": "Implement repeat capping, fatigue factor, and marketer’s veto logic.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-1-5",
+              "title": "Unit and Integration Testing",
+              "description": "Write and execute tests for all engine components and business rules.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-1-6",
+              "title": "Performance and Load Testing",
+              "description": "Test engine under expected and peak loads (10M-40M API calls/month).",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "BE-2",
+          "title": "Develop Choice API Endpoints",
+          "description": "Expose RESTful APIs for offer recommendations, supporting both real-time and batch-based requests. Ensure secure, scalable, and standardized interfaces.",
+          "acceptance_criteria": [
+            "APIs support real-time and batch offer retrieval.",
+            "APIs use hashed mobile number as identifier.",
+            "APIs are secured and meet HDFC Bank standards.",
+            "API documentation is complete and reviewed."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 80,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "BE-2-1",
+              "title": "Design API Contracts",
+              "description": "Define OpenAPI/Swagger specs for all endpoints.",
+              "priority": "Critical",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-2-2",
+              "title": "Implement Real-time Offer API",
+              "description": "Develop endpoint for real-time offer recommendations.",
+              "priority": "Critical",
+              "estimated_hours": 24,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-2-3",
+              "title": "Implement Batch Offer API",
+              "description": "Develop endpoint for batch-based offer retrieval.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-2-4",
+              "title": "API Security and Rate Limiting",
+              "description": "Implement authentication, authorization, and rate limiting.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-2-5",
+              "title": "API Documentation and Testing",
+              "description": "Document APIs and perform end-to-end testing.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QA-1",
+          "title": "End-to-End QA for Recommendation Engine",
+          "description": "Perform comprehensive QA for the recommendation engine and APIs, including functional, integration, and performance testing.",
+          "acceptance_criteria": [
+            "All test cases pass.",
+            "No critical or high-severity bugs.",
+            "Performance benchmarks are met."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 40,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "QA-1-1",
+              "title": "Develop Test Plan and Cases",
+              "description": "Create detailed test plan and cases for all engine and API features.",
+              "priority": "Critical",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-1-2",
+              "title": "Functional and Integration Testing",
+              "description": "Execute functional and integration tests.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-1-3",
+              "title": "Performance and Load Testing",
+              "description": "Test system under load and validate scalability.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-1-4",
+              "title": "Bug Fix Verification and Regression",
+              "description": "Verify fixes and perform regression testing.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "PM-1",
+          "title": "Product Management & Stakeholder Alignment",
+          "description": "Coordinate requirements, manage scope, and ensure alignment with business stakeholders for the recommendation engine.",
+          "acceptance_criteria": [
+            "Requirements are documented and signed off.",
+            "Stakeholder reviews are conducted.",
+            "Scope changes are tracked and communicated."
+          ],
+          "priority": "High",
+          "estimated_hours": 20,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "PM-1-1",
+              "title": "Requirements Gathering",
+              "description": "Conduct workshops and document detailed requirements.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-1-2",
+              "title": "Stakeholder Reviews",
+              "description": "Organize and facilitate stakeholder review sessions.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-1-3",
+              "title": "Scope Management",
+              "description": "Track and communicate scope changes.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-2",
+      "title": "Offer Management Platform (OMP) with Maker-Checker Flows",
+      "description": "Design and implement a centralized Offer Management Platform (OMP) to onboard, manage, and approve/reject offers. Includes maker-checker flows, offer templates, and support for onboarding Smartbuy, Alliance, and Consumer Durable Loans offers. Business justification: Enables efficient, auditable, and scalable offer onboarding and management.",
+      "priority": "High",
+      "estimated_hours": 240,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "FE-1",
+          "title": "Design OMP User Interface",
+          "description": "Create a user-friendly UI for offer onboarding, management, and approval/rejection (maker-checker) flows.",
+          "acceptance_criteria": [
+            "UI supports offer onboarding using OMP template.",
+            "Maker and checker personas are supported.",
+            "UI is responsive and meets HDFC Bank branding."
+          ],
+          "priority": "High",
+          "estimated_hours": 40,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "FE-1-1",
+              "title": "Wireframes and UX Design",
+              "description": "Develop wireframes and UX flows for OMP.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-1-2",
+              "title": "UI Implementation",
+              "description": "Implement frontend components for offer onboarding and approval.",
+              "priority": "High",
+              "estimated_hours": 24,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "FE-1-3",
+              "title": "Accessibility and Branding",
+              "description": "Ensure UI meets accessibility and branding guidelines.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "BE-3",
+          "title": "Develop OMP Backend and Maker-Checker Logic",
+          "description": "Implement backend services for offer onboarding, approval/rejection, and audit trails. Support for OMP template and user roles.",
+          "acceptance_criteria": [
+            "Backend supports offer onboarding and approval/rejection.",
+            "Audit trails are maintained.",
+            "OMP template is supported for Smartbuy, Alliance, and CDL offers."
+          ],
+          "priority": "High",
+          "estimated_hours": 64,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "BE-3-1",
+              "title": "Database Schema Design",
+              "description": "Design schema for offers, users, and audit logs.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-3-2",
+              "title": "Offer Onboarding API",
+              "description": "Develop API for onboarding offers using OMP template.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-3-3",
+              "title": "Maker-Checker Workflow Implementation",
+              "description": "Implement logic for maker-checker approval/rejection and audit trails.",
+              "priority": "High",
+              "estimated_hours": 24,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-3-4",
+              "title": "Role-Based Access Control",
+              "description": "Implement user roles and permissions for maker/checker.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "BE-3-5",
+              "title": "Backend Testing",
+              "description": "Write and execute backend unit and integration tests.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QA-2",
+          "title": "OMP QA and UAT",
+          "description": "Test OMP UI and backend, including maker-checker flows, offer onboarding, and audit trails.",
+          "acceptance_criteria": [
+            "All UI and backend features are tested.",
+            "No critical bugs in maker-checker flows.",
+            "Audit logs are accurate."
+          ],
+          "priority": "High",
+          "estimated_hours": 32,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "QA-2-1",
+              "title": "Test Case Development",
+              "description": "Develop test cases for OMP features.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-2-2",
+              "title": "Functional Testing",
+              "description": "Execute functional tests for onboarding and approval flows.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-2-3",
+              "title": "UAT Support",
+              "description": "Support user acceptance testing and bug fixes.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "PM-2",
+          "title": "OMP Product Management & Training",
+          "description": "Manage requirements, coordinate with stakeholders, and provide training for OMP users.",
+          "acceptance_criteria": [
+            "Requirements are documented and signed off.",
+            "Training materials are delivered.",
+            "Stakeholder feedback is incorporated."
+          ],
+          "priority": "Medium",
+          "estimated_hours": 16,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "PM-2-1",
+              "title": "Requirements Documentation",
+              "description": "Document detailed requirements for OMP.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-2-2",
+              "title": "Stakeholder Coordination",
+              "description": "Coordinate reviews and feedback sessions.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-2-3",
+              "title": "User Training",
+              "description": "Develop and deliver training for OMP users.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-3",
+      "title": "Customer Data Integration and Batch Processing",
+      "description": "Integrate monthly CIU files (parquet, SFTP, up to 50GB) for customer data, generate batch files for non-Smartbuy assets, and ensure standardized data formats. Business justification: Enables accurate, scalable, and timely offer recommendations for all customer segments.",
+      "priority": "Critical",
+      "estimated_hours": 200,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "DE-1",
+          "title": "CIU File Ingestion and Processing",
+          "description": "Automate ingestion of monthly CIU files (parquet, SFTP), validate data, and process for offer recommendations.",
+          "acceptance_criteria": [
+            "CIU files are ingested and validated automatically.",
+            "Data is processed and available for offer engine.",
+            "Checksum validation and error handling are implemented."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 56,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "DE-1-1",
+              "title": "SFTP Integration and Automation",
+              "description": "Automate SFTP download and checksum validation for CIU files.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-1-2",
+              "title": "Parquet File Parsing",
+              "description": "Parse and validate parquet files for customer data.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-1-3",
+              "title": "Data Validation and Error Handling",
+              "description": "Implement validation and error handling for data ingestion.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-1-4",
+              "title": "Integration with Offer Engine",
+              "description": "Make processed data available to the offer engine.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "DE-2",
+          "title": "Batch File Generation for Non-Smartbuy Assets",
+          "description": "Generate monthly full and daily delta batch files for non-Smartbuy assets, supporting standardized formats and secure SFTP transfer.",
+          "acceptance_criteria": [
+            "Batch files are generated as per schedule.",
+            "Files follow standardized formats.",
+            "Files are securely transferred via SFTP."
+          ],
+          "priority": "High",
+          "estimated_hours": 48,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "DE-2-1",
+              "title": "Batch File Generation Logic",
+              "description": "Implement logic for full and delta batch file creation.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-2-2",
+              "title": "Standardized Data Formatting",
+              "description": "Ensure batch files adhere to agreed data formats.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-2-3",
+              "title": "SFTP Transfer Automation",
+              "description": "Automate secure SFTP transfer of batch files.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-2-4",
+              "title": "Batch File Validation and Logging",
+              "description": "Implement validation and logging for batch file generation and transfer.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "DE-3",
+          "title": "Hashed Mobile Number Integration",
+          "description": "Implement and validate hashed mobile number as the unified customer identifier across all systems.",
+          "acceptance_criteria": [
+            "All systems use hashed mobile number as identifier.",
+            "No duplicate or inconsistent identifiers.",
+            "Integration is tested end-to-end."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 32,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "DE-3-1",
+              "title": "Hashing Algorithm Implementation",
+              "description": "Implement secure hashing for mobile numbers.",
+              "priority": "Critical",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-3-2",
+              "title": "Integration with Data Pipelines",
+              "description": "Integrate hashed identifier into all data pipelines.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DE-3-3",
+              "title": "Identifier Consistency Validation",
+              "description": "Validate identifier consistency across systems.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QA-3",
+          "title": "Data QA and Reconciliation",
+          "description": "Test and validate all data integration, batch processing, and identifier logic.",
+          "acceptance_criteria": [
+            "All data pipelines are tested.",
+            "No critical data quality issues.",
+            "Reconciliation reports are generated."
+          ],
+          "priority": "High",
+          "estimated_hours": 24,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "QA-3-1",
+              "title": "Data Pipeline Testing",
+              "description": "Test all data ingestion and processing pipelines.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-3-2",
+              "title": "Batch File Validation",
+              "description": "Validate batch file content and format.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-3-3",
+              "title": "Reconciliation Reporting",
+              "description": "Generate and review reconciliation reports.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "PM-3",
+          "title": "Data Integration Coordination",
+          "description": "Coordinate with HDFC Bank IT/data teams for timely CIU file delivery, format changes, and issue resolution.",
+          "acceptance_criteria": [
+            "CIU file delivery is tracked and issues are resolved.",
+            "Format changes are communicated and managed.",
+            "Stakeholder updates are provided."
+          ],
+          "priority": "Medium",
+          "estimated_hours": 16,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "PM-3-1",
+              "title": "File Delivery Tracking",
+              "description": "Track CIU file delivery and escalate delays.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-3-2",
+              "title": "Format Change Management",
+              "description": "Manage and communicate any changes in file formats.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-3-3",
+              "title": "Stakeholder Updates",
+              "description": "Provide regular updates to stakeholders.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-4",
+      "title": "Integration with HDFC Digital Assets and SSO",
+      "description": "Integrate Choice API and SSO with Smartbuy and other HDFC digital assets to enable seamless offer delivery and cross-portal navigation. Business justification: Ensures unified customer experience and secure, seamless navigation across bank assets.",
+      "priority": "Critical",
+      "estimated_hours": 180,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "INT-1",
+          "title": "Choice API Integration with Smartbuy",
+          "description": "Integrate Choice API with Smartbuy portal for real-time offer recommendations and interaction capture.",
+          "acceptance_criteria": [
+            "Smartbuy successfully retrieves offers via Choice API.",
+            "Interaction capture (like/dislike, views, bookmarks) is supported.",
+            "Integration is tested end-to-end."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 48,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "INT-1-1",
+              "title": "API Contract Alignment",
+              "description": "Align API contracts between Choice API and Smartbuy.",
+              "priority": "Critical",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "INT-1-2",
+              "title": "Integration Development",
+              "description": "Develop integration logic for offer retrieval and interaction capture.",
+              "priority": "Critical",
+              "estimated_hours": 24,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "INT-1-3",
+              "title": "Integration Testing",
+              "description": "Test end-to-end integration with Smartbuy.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "INT-2",
+          "title": "Batch File Integration with Non-Smartbuy Assets",
+          "description": "Integrate batch file outputs with non-Smartbuy digital assets (Netbanking, Mobile App, etc.) for offer delivery.",
+          "acceptance_criteria": [
+            "Batch files are delivered and consumed by non-Smartbuy assets.",
+            "Integration is validated with at least two assets.",
+            "No data loss or corruption."
+          ],
+          "priority": "High",
+          "estimated_hours": 32,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "INT-2-1",
+              "title": "Integration Planning",
+              "description": "Plan integration approach with each asset team.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "INT-2-2",
+              "title": "Integration Development",
+              "description": "Develop and test integration logic for batch file consumption.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "INT-2-3",
+              "title": "Validation and Troubleshooting",
+              "description": "Validate integration and resolve issues.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "SEC-1",
+          "title": "SSO Integration for Cross-Portal Navigation",
+          "description": "Integrate SSO between HDFC assets and Smartbuy to enable seamless, secure cross-portal navigation.",
+          "acceptance_criteria": [
+            "SSO is implemented and tested between at least two portals.",
+            "User session is maintained across portals.",
+            "Security and compliance requirements are met."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 48,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "SEC-1-1",
+              "title": "SSO Solution Design",
+              "description": "Design SSO architecture and flows.",
+              "priority": "Critical",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "SEC-1-2",
+              "title": "SSO Implementation",
+              "description": "Develop and integrate SSO logic with portals.",
+              "priority": "Critical",
+              "estimated_hours": 24,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "SEC-1-3",
+              "title": "SSO Security and Compliance Testing",
+              "description": "Test SSO for security, compliance, and user experience.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QA-4",
+          "title": "Integration QA and UAT",
+          "description": "Test all integrations (API, batch, SSO) for functionality, security, and user experience.",
+          "acceptance_criteria": [
+            "All integrations are tested and validated.",
+            "No critical integration bugs.",
+            "User experience is seamless."
+          ],
+          "priority": "High",
+          "estimated_hours": 32,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "QA-4-1",
+              "title": "Integration Test Case Development",
+              "description": "Develop test cases for all integration points.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-4-2",
+              "title": "Functional and Security Testing",
+              "description": "Execute functional and security tests for integrations.",
+              "priority": "High",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-4-3",
+              "title": "UAT Support",
+              "description": "Support user acceptance testing and resolve issues.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "PM-4",
+          "title": "Integration Coordination and Compliance",
+          "description": "Coordinate with IT, legal, and compliance teams for integration approvals, network whitelisting, and sign-offs.",
+          "acceptance_criteria": [
+            "All necessary approvals are obtained.",
+            "Network whitelisting is completed.",
+            "Compliance documentation is delivered."
+          ],
+          "priority": "High",
+          "estimated_hours": 20,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "PM-4-1",
+              "title": "Approval and Sign-off Tracking",
+              "description": "Track and obtain all required approvals.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-4-2",
+              "title": "Network Whitelisting Coordination",
+              "description": "Coordinate network whitelisting between teams.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-4-3",
+              "title": "Compliance Documentation",
+              "description": "Prepare and deliver compliance documentation.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-5",
+      "title": "Infrastructure, Security, and Environment Setup",
+      "description": "Provision and configure infrastructure, environments (stage, prod), and security controls to support OBOP MVP1. Business justification: Ensures system stability, scalability, and compliance with HDFC Bank standards.",
+      "priority": "Critical",
+      "estimated_hours": 120,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "DEVOPS-1",
+          "title": "Provision Infrastructure and Environments",
+          "description": "Set up cloud/on-prem infrastructure, stage and production environments, and monitoring tools.",
+          "acceptance_criteria": [
+            "Infrastructure is provisioned and documented.",
+            "Stage and prod environments are available.",
+            "Monitoring and alerting are configured."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 40,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "DEVOPS-1-1",
+              "title": "Infrastructure Provisioning",
+              "description": "Provision compute, storage, and network resources.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DEVOPS-1-2",
+              "title": "Environment Setup",
+              "description": "Set up stage and production environments.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "DEVOPS-1-3",
+              "title": "Monitoring and Alerting",
+              "description": "Configure monitoring and alerting for all environments.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "SEC-2",
+          "title": "Implement Security Controls",
+          "description": "Implement encryption, access controls, and network security (API/network whitelisting, SFTP encryption, etc.).",
+          "acceptance_criteria": [
+            "All data transfers are encrypted.",
+            "Access controls are in place.",
+            "Network whitelisting is implemented."
+          ],
+          "priority": "Critical",
+          "estimated_hours": 40,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "SEC-2-1",
+              "title": "Encryption Implementation",
+              "description": "Implement encryption for SFTP, data at rest, and in transit.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "SEC-2-2",
+              "title": "Access Control Setup",
+              "description": "Configure RBAC and access controls for all systems.",
+              "priority": "Critical",
+              "estimated_hours": 16,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "SEC-2-3",
+              "title": "Network Security",
+              "description": "Implement network whitelisting and firewall rules.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QA-5",
+          "title": "Environment and Security QA",
+          "description": "Test all environments and security controls for compliance and stability.",
+          "acceptance_criteria": [
+            "Environments are stable and secure.",
+            "No critical vulnerabilities.",
+            "Compliance requirements are met."
+          ],
+          "priority": "High",
+          "estimated_hours": 24,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "QA-5-1",
+              "title": "Environment Testing",
+              "description": "Test stage and prod environments for stability.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-5-2",
+              "title": "Security Testing",
+              "description": "Perform vulnerability and penetration testing.",
+              "priority": "High",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "QA-5-3",
+              "title": "Compliance Validation",
+              "description": "Validate compliance with HDFC Bank standards.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "PM-5",
+          "title": "Infrastructure and Security Coordination",
+          "description": "Coordinate with IT, DevOps, and security teams for provisioning, approvals, and compliance.",
+          "acceptance_criteria": [
+            "Provisioning and approvals are tracked.",
+            "Compliance documentation is delivered.",
+            "Stakeholder updates are provided."
+          ],
+          "priority": "Medium",
+          "estimated_hours": 16,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "PM-5-1",
+              "title": "Provisioning Coordination",
+              "description": "Coordinate infrastructure provisioning with IT/DevOps.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-5-2",
+              "title": "Security Approval Tracking",
+              "description": "Track security approvals and compliance checks.",
+              "priority": "Medium",
+              "estimated_hours": 4,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "PM-5-3",
+              "title": "Stakeholder Updates",
+              "description": "Provide regular updates to stakeholders.",
+              "priority": "Medium",
+              "estimated_hours": 8,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "total_estimated_hours": 1060,
+  "timeline_weeks": 20
+}

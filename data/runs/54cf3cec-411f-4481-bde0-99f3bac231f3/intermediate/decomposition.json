@@ -1,0 +1,1062 @@
+{
+  "document_id": "54cf3cec-411f-4481-bde0-99f3bac231f3",
+  "created_at": "2025-09-24T22:39:44.207333",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "title": "Centralized Offer Recommendation Engine (Choice API)",
+      "description": "Develop and deploy a centralized, rule-based offer recommendation engine (Choice API) to unify customer offers across all HDFC Bank digital assets. This engine will provide personalized, consistent, and scalable recommendations, supporting both batch and real-time delivery. Business justification: Enables single source of truth, reduces fragmentation, and increases customer engagement.",
+      "priority": "Critical",
+      "estimated_hours": 320,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "STORY-1.1",
+          "title": "Design Rule-Based Recommendation Engine",
+          "description": "Architect and design a scalable, rule-based engine for personalized offer recommendations, supporting ETB/NTB segmentation, fatigue factor, and merchant filtering.",
+          "acceptance_criteria": [
+            "Design document reviewed and approved by stakeholders",
+            "Supports ETB/NTB segmentation logic",
+            "Supports fatigue factor and repeat capping",
+            "Supports merchant and card type filtering"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 13,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-1.1.1",
+              "title": "Draft Engine Architecture",
+              "description": "Create high-level architecture diagram and component breakdown for the recommendation engine.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.1.2",
+              "title": "Define Rule Logic",
+              "description": "Document business rules for ETB/NTB, fatigue, merchant filtering, and card type mapping.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.1.3",
+              "title": "Stakeholder Review",
+              "description": "Present design to stakeholders and incorporate feedback.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.1.4",
+              "title": "Finalize Design Documentation",
+              "description": "Publish final design document with all required details.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-1.2",
+          "title": "Develop Choice API Backend",
+          "description": "Implement the backend services for the Choice API, including endpoints for real-time and batch recommendations, rule engine integration, and customer identifier handling.",
+          "acceptance_criteria": [
+            "API endpoints for real-time and batch recommendations implemented",
+            "Supports hashed mobile number as unique identifier",
+            "Handles up to 10M API calls/month (MVP1)",
+            "Unit and integration tests completed"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 21,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-1.2.1",
+              "title": "Set Up API Framework",
+              "description": "Initialize backend project and set up API framework with required dependencies.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.2.2",
+              "title": "Implement Real-Time Recommendation Endpoint",
+              "description": "Develop endpoint for real-time offer recommendations.",
+              "priority": "Critical",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.2.3",
+              "title": "Implement Batch Recommendation Endpoint",
+              "description": "Develop endpoint for batch-based recommendations.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.2.4",
+              "title": "Integrate Rule Engine",
+              "description": "Integrate rule engine logic with API endpoints.",
+              "priority": "Critical",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.2.5",
+              "title": "Unit and Integration Testing",
+              "description": "Write and execute unit and integration tests for all endpoints.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-1.3",
+          "title": "API Security and Whitelisting",
+          "description": "Implement API security measures, including whitelisting between Crayon Data and R360, and ensure encrypted data transfer.",
+          "acceptance_criteria": [
+            "API whitelisting configured and tested",
+            "Encrypted data transfer verified",
+            "Security documentation completed"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-1.3.1",
+              "title": "Configure API Whitelisting",
+              "description": "Set up IP whitelisting between Crayon Data and R360 environments.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.3.2",
+              "title": "Implement Encrypted Transfer",
+              "description": "Ensure all API traffic is encrypted using TLS/SSL.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.3.3",
+              "title": "Document Security Measures",
+              "description": "Create documentation for all security configurations and protocols.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-1.4",
+          "title": "Performance and Scalability Testing",
+          "description": "Test the Choice API for performance and scalability to support 10M API calls/month (MVP1) and plan for 40M/month.",
+          "acceptance_criteria": [
+            "Load testing completed for 10M API calls/month",
+            "Bottlenecks identified and addressed",
+            "Scalability plan documented"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-1.4.1",
+              "title": "Set Up Load Testing Tools",
+              "description": "Configure and deploy load testing tools for API endpoints.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.4.2",
+              "title": "Execute Load Tests",
+              "description": "Run load tests simulating 10M API calls/month.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-1.4.3",
+              "title": "Analyze and Optimize",
+              "description": "Analyze results, identify bottlenecks, and optimize API performance.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-2",
+      "title": "Offer Management Portal (OMP) Development",
+      "description": "Build a centralized Offer Management Portal for onboarding, approval, and management of offers. Includes maker-checker flows, offer ingestion, and support for multiple offer categories. Business justification: Streamlines offer onboarding, ensures compliance, and supports business agility.",
+      "priority": "High",
+      "estimated_hours": 240,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "STORY-2.1",
+          "title": "Design OMP User Interface",
+          "description": "Design the UI/UX for the Offer Management Portal, ensuring usability for onboarding teams and compliance with HDFC Bank branding.",
+          "acceptance_criteria": [
+            "UI/UX mockups reviewed and approved",
+            "Supports offer onboarding, approval, and rejection flows",
+            "Accessible and responsive design"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-2.1.1",
+              "title": "Create Wireframes",
+              "description": "Develop wireframes for all OMP screens.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.1.2",
+              "title": "Design UI Mockups",
+              "description": "Create high-fidelity UI mockups based on wireframes.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.1.3",
+              "title": "Stakeholder Review",
+              "description": "Present designs to onboarding teams and incorporate feedback.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-2.2",
+          "title": "Develop OMP Backend Services",
+          "description": "Implement backend services for offer ingestion, approval/rejection, and maker-checker flows.",
+          "acceptance_criteria": [
+            "Offer ingestion API implemented",
+            "Maker-checker approval/rejection logic functional",
+            "Audit logs maintained"
+          ],
+          "priority": "High",
+          "estimated_hours": 13,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-2.2.1",
+              "title": "Implement Offer Ingestion API",
+              "description": "Develop API for ingesting offers in OMP format.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.2.2",
+              "title": "Develop Maker-Checker Logic",
+              "description": "Implement maker-checker approval/rejection workflow.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.2.3",
+              "title": "Set Up Audit Logging",
+              "description": "Ensure all actions are logged for compliance.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-2.3",
+          "title": "Integrate OMP with Choice API",
+          "description": "Enable seamless integration between OMP and the Choice API for real-time offer updates and approvals.",
+          "acceptance_criteria": [
+            "OMP updates reflected in Choice API within 5 minutes",
+            "Integration tested end-to-end",
+            "Error handling and rollback implemented"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-2.3.1",
+              "title": "Develop Integration Layer",
+              "description": "Build middleware or direct integration between OMP and Choice API.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.3.2",
+              "title": "Implement Sync Mechanism",
+              "description": "Ensure offer updates are pushed to Choice API in near real-time.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.3.3",
+              "title": "Test Integration",
+              "description": "Perform end-to-end testing of OMP and Choice API integration.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-2.4",
+          "title": "User Access Management and SSO Integration",
+          "description": "Implement user access controls and integrate SSO for onboarding teams and approvers.",
+          "acceptance_criteria": [
+            "Role-based access implemented",
+            "SSO integration tested and functional",
+            "User provisioning and deprovisioning documented"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-2.4.1",
+              "title": "Implement Role-Based Access",
+              "description": "Develop user roles and permissions for OMP.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.4.2",
+              "title": "Integrate SSO",
+              "description": "Integrate SSO for seamless user login.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-2.4.3",
+              "title": "Document User Management",
+              "description": "Create documentation for user provisioning and deprovisioning.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-3",
+      "title": "Data Engineering: CIU File Handling and Customer Identifier Management",
+      "description": "Establish robust processes for monthly SFTP transfer, ingestion, and validation of CIU files (parquet, up to 50GB), ensuring consistent hashed mobile number mapping and card type validation. Business justification: Accurate customer segmentation and offer personalization depend on reliable data ingestion.",
+      "priority": "Critical",
+      "estimated_hours": 200,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "STORY-3.1",
+          "title": "Set Up SFTP Infrastructure",
+          "description": "Provision and configure secure SFTP infrastructure for monthly CIU file transfers, including encryption and checksum validation.",
+          "acceptance_criteria": [
+            "SFTP server provisioned and accessible",
+            "Encryption and checksum validation implemented",
+            "File transfer tested with sample data"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-3.1.1",
+              "title": "Provision SFTP Server",
+              "description": "Set up SFTP server with required storage and access controls.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-3.1.2",
+              "title": "Configure Encryption",
+              "description": "Enable encryption for all SFTP transfers.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-3.1.3",
+              "title": "Implement Checksum Validation",
+              "description": "Set up checksum validation for file integrity.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-3.1.4",
+              "title": "Test File Transfer",
+              "description": "Conduct test transfer with sample CIU file.",
+              "priority": "Medium",
+              "estimated_hours": 1,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-3.2",
+          "title": "CIU File Ingestion and Validation Pipeline",
+          "description": "Develop automated pipelines for ingesting, validating, and processing CIU files, ensuring data consistency and quality.",
+          "acceptance_criteria": [
+            "Automated ingestion pipeline implemented",
+            "Data validation checks for hashed mobile number and card type",
+            "Error reporting and alerting in place"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 13,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-3.2.1",
+              "title": "Develop Ingestion Pipeline",
+              "description": "Build ETL pipeline for CIU file ingestion.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-3.2.2",
+              "title": "Implement Data Validation",
+              "description": "Validate hashed mobile number mapping and card type consistency.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-3.2.3",
+              "title": "Set Up Error Reporting",
+              "description": "Configure error reporting and alerting for data issues.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-3.3",
+          "title": "Batch File Generation for Non-Smartbuy Assets",
+          "description": "Generate batch files with top 5 merchants/offers per customer for non-Smartbuy assets, ensuring correct formatting and delivery.",
+          "acceptance_criteria": [
+            "Batch files generated in required format",
+            "Files delivered to designated teams",
+            "Validation checks passed"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-3.3.1",
+              "title": "Develop Batch File Generator",
+              "description": "Implement logic to generate batch files for non-Smartbuy assets.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-3.3.2",
+              "title": "Format and Validate Output",
+              "description": "Ensure output files meet required format and validation criteria.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-3.3.3",
+              "title": "Coordinate Delivery",
+              "description": "Deliver files to relevant asset-owning teams and confirm receipt.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-4",
+      "title": "Frontend Integration and User Experience",
+      "description": "Integrate Choice API with Smartbuy and other digital assets, ensuring seamless SSO, consistent UI, and interaction capture (like/dislike, bookmark, views). Business justification: Delivers unified, personalized customer experience and increases engagement.",
+      "priority": "High",
+      "estimated_hours": 160,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "STORY-4.1",
+          "title": "Integrate Choice API with Smartbuy Frontend",
+          "description": "Connect Smartbuy frontend (R360) with Choice API for real-time offer recommendations and interaction capture.",
+          "acceptance_criteria": [
+            "Smartbuy frontend displays personalized offers from Choice API",
+            "Interaction capture (like/dislike, bookmark, views) functional",
+            "Integration tested end-to-end"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 13,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-4.1.1",
+              "title": "Implement API Integration",
+              "description": "Connect frontend to Choice API endpoints.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-4.1.2",
+              "title": "Develop Interaction Capture Logic",
+              "description": "Implement logic for capturing user interactions (like/dislike, bookmark, views).",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-4.1.3",
+              "title": "End-to-End Testing",
+              "description": "Test integration and interaction capture across all supported devices.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-4.2",
+          "title": "Implement SSO Token-Based Redirection",
+          "description": "Enable seamless SSO-based redirection between digital assets for unified customer journeys.",
+          "acceptance_criteria": [
+            "SSO token-based redirection functional across assets",
+            "User session maintained across transitions",
+            "Security and compliance checks passed"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-4.2.1",
+              "title": "Integrate SSO SDK",
+              "description": "Integrate SSO SDK or libraries into frontend applications.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-4.2.2",
+              "title": "Implement Token Handling",
+              "description": "Develop logic for handling SSO tokens and session management.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-4.2.3",
+              "title": "Test Redirection Flows",
+              "description": "Test SSO redirection and session continuity across all assets.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-4.3",
+          "title": "UI Consistency and Accessibility Review",
+          "description": "Ensure consistent UI and accessibility standards across all integrated digital assets.",
+          "acceptance_criteria": [
+            "UI reviewed for consistency with HDFC Bank branding",
+            "Accessibility standards (WCAG 2.1) met",
+            "Stakeholder sign-off obtained"
+          ],
+          "priority": "Medium",
+          "estimated_hours": 5,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-4.3.1",
+              "title": "Conduct UI Review",
+              "description": "Review UI across all assets for consistency.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-4.3.2",
+              "title": "Accessibility Testing",
+              "description": "Test frontend for accessibility compliance.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-4.3.3",
+              "title": "Stakeholder Sign-Off",
+              "description": "Obtain sign-off from design and product teams.",
+              "priority": "Low",
+              "estimated_hours": 1,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-5",
+      "title": "Compliance, Legal, and Operational Readiness",
+      "description": "Ensure all legal, compliance, HR, and operational requirements are met, including data privacy, regulatory checks, and cross-team coordination. Business justification: Mitigates risk, ensures regulatory compliance, and supports smooth go-live.",
+      "priority": "Critical",
+      "estimated_hours": 120,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "STORY-5.1",
+          "title": "Legal and Compliance Review",
+          "description": "Conduct legal and compliance reviews for data handling, offer management, and customer privacy.",
+          "acceptance_criteria": [
+            "Legal review completed and documented",
+            "Compliance sign-off obtained",
+            "All regulatory requirements met"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-5.1.1",
+              "title": "Schedule Legal Review",
+              "description": "Coordinate with legal team for review sessions.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-5.1.2",
+              "title": "Document Compliance Requirements",
+              "description": "List and document all compliance requirements for the project.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-5.1.3",
+              "title": "Obtain Sign-Off",
+              "description": "Secure sign-off from legal and compliance teams.",
+              "priority": "Critical",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-5.2",
+          "title": "HR and Access Approvals",
+          "description": "Obtain HR approvals for onboarding new team members and ensure all access rights are provisioned.",
+          "acceptance_criteria": [
+            "HR approvals obtained for all new hires",
+            "Access rights provisioned for all team members",
+            "Documentation updated"
+          ],
+          "priority": "Medium",
+          "estimated_hours": 5,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-5.2.1",
+              "title": "Submit HR Requests",
+              "description": "Submit requests for new hires and access provisioning.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-5.2.2",
+              "title": "Track Approvals",
+              "description": "Track and follow up on HR and access approvals.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-5.2.3",
+              "title": "Update Documentation",
+              "description": "Update project documentation with access and HR approval details.",
+              "priority": "Low",
+              "estimated_hours": 1,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-5.3",
+          "title": "Operational Runbooks and Support Handover",
+          "description": "Prepare operational runbooks and conduct handover sessions with IT and support teams.",
+          "acceptance_criteria": [
+            "Runbooks created for all critical processes",
+            "Support handover sessions completed",
+            "IT sign-off obtained"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-5.3.1",
+              "title": "Draft Operational Runbooks",
+              "description": "Create detailed runbooks for SFTP, API, and OMP operations.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-5.3.2",
+              "title": "Conduct Handover Sessions",
+              "description": "Organize and conduct handover sessions with IT/support teams.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-5.3.3",
+              "title": "Obtain IT Sign-Off",
+              "description": "Secure IT team sign-off for operational readiness.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "EPIC-6",
+      "title": "Testing, QA, and Documentation",
+      "description": "Comprehensive testing (unit, integration, UAT), documentation, and code review for all components. Business justification: Ensures quality, reliability, and maintainability of the OBOP solution.",
+      "priority": "Critical",
+      "estimated_hours": 160,
+      "assignee": null,
+      "status": "To Do",
+      "stories": [
+        {
+          "id": "STORY-6.1",
+          "title": "Unit and Integration Testing",
+          "description": "Develop and execute unit and integration tests for backend, frontend, and data pipelines.",
+          "acceptance_criteria": [
+            "All critical components covered by tests",
+            "Test coverage > 80%",
+            "All tests pass in CI/CD pipeline"
+          ],
+          "priority": "Critical",
+          "estimated_hours": 13,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-6.1.1",
+              "title": "Write Unit Tests",
+              "description": "Develop unit tests for backend, frontend, and data components.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-6.1.2",
+              "title": "Develop Integration Tests",
+              "description": "Implement integration tests for API and data flows.",
+              "priority": "High",
+              "estimated_hours": 5,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-6.1.3",
+              "title": "Configure CI/CD Test Runs",
+              "description": "Ensure all tests run in CI/CD pipeline.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-6.2",
+          "title": "User Acceptance Testing (UAT)",
+          "description": "Coordinate and execute UAT with business stakeholders, onboarding teams, and asset owners.",
+          "acceptance_criteria": [
+            "UAT plan created and approved",
+            "All critical scenarios tested",
+            "Sign-off from business stakeholders"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-6.2.1",
+              "title": "Draft UAT Plan",
+              "description": "Create detailed UAT plan with scenarios and test cases.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-6.2.2",
+              "title": "Coordinate UAT Sessions",
+              "description": "Schedule and facilitate UAT sessions with stakeholders.",
+              "priority": "Medium",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-6.2.3",
+              "title": "Collect Feedback and Sign-Off",
+              "description": "Gather feedback, address issues, and obtain sign-off.",
+              "priority": "High",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "STORY-6.3",
+          "title": "Documentation and Code Review",
+          "description": "Prepare technical documentation and conduct code reviews for all deliverables.",
+          "acceptance_criteria": [
+            "Technical documentation completed for all components",
+            "Code reviews conducted for all major features",
+            "Documentation published in central repository"
+          ],
+          "priority": "High",
+          "estimated_hours": 8,
+          "assignee": null,
+          "status": "To Do",
+          "subtasks": [
+            {
+              "id": "TASK-6.3.1",
+              "title": "Prepare Technical Documentation",
+              "description": "Document architecture, APIs, data flows, and operational procedures.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-6.3.2",
+              "title": "Conduct Code Reviews",
+              "description": "Organize code review sessions for all major features.",
+              "priority": "High",
+              "estimated_hours": 3,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            },
+            {
+              "id": "TASK-6.3.3",
+              "title": "Publish Documentation",
+              "description": "Publish all documentation to central repository and share with teams.",
+              "priority": "Medium",
+              "estimated_hours": 2,
+              "assignee": null,
+              "status": "To Do",
+              "dependencies": []
+            }
+          ],
+          "dependencies": []
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "total_estimated_hours": 1200,
+  "timeline_weeks": 16
+}

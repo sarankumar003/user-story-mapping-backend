@@ -1,0 +1,49 @@
+{
+  "project_name": "Online Appointment Booking System",
+  "project_description": "Development of an online system that enables customers to schedule, reschedule, and cancel appointments via web and mobile platforms, aiming to improve customer convenience, reduce manual errors, and optimize resource utilization.",
+  "objectives": [
+    "Enhance customer experience by enabling 24/7 online booking",
+    "Reduce administrative workload of staff managing appointments",
+    "Provide automated reminders to reduce no-shows",
+    "Enable reporting and analytics for better business insights"
+  ],
+  "scope": [
+    "Web and mobile access for booking appointments",
+    "User registration and login",
+    "Appointment scheduling, rescheduling, and cancellation",
+    "SMS/email reminders",
+    "Admin dashboard for staff to view/manage bookings",
+    "Out of Scope: Payment integration (planned for future phase)",
+    "Out of Scope: Multi-language support",
+    "Out of Scope: Third-party CRM integration"
+  ],
+  "stakeholders": [
+    "Project Sponsor",
+    "End Users (Customers booking appointments)",
+    "Admin Users (Staff managing bookings)",
+    "IT Team (Developers, Testers, System Admins)"
+  ],
+  "key_features": [
+    "Customer account creation and management",
+    "Search and book available appointment slots",
+    "Cancel or reschedule appointments",
+    "Booking confirmation via email/SMS",
+    "Automated reminders 24 hours before appointment",
+    "Admin view, edit, or cancel bookings",
+    "Report generation (daily, weekly, monthly)"
+  ],
+  "technical_requirements": [
+    "Support at least 500 concurrent users",
+    "Accessible via desktop and mobile browsers",
+    "Data encryption (SSL/TLS)",
+    "99.5% system availability"
+  ],
+  "timeline_estimate": "Requirements Gathering: 2 weeks; Design & Development: 8 weeks; Testing: 3 weeks; Deployment: 1 week",
+  "risks": [
+    "Limited budget restricts phase 1 to core booking features only"
+  ],
+  "assumptions": [
+    "Customers must have internet access",
+    "System will be hosted on a cloud-based environment"
+  ]
+}

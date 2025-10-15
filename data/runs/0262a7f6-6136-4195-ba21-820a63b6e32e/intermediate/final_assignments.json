@@ -1,0 +1,428 @@
+{
+  "run_id": "0262a7f6-6136-4195-ba21-820a63b6e32e",
+  "saved_at": "2025-09-29T16:12:23.449Z",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "title": "Task Management Core Functionality",
+      "description": "Develop the core features of the To-Do List application, enabling users to add, edit, mark as completed, and delete tasks. This epic is critical to delivering the primary business value: allowing users to efficiently manage their daily tasks.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "FE-1",
+          "title": "Add New Task",
+          "description": "As a user, I want to add a new task with a title and optional description so that I can keep track of things I need to do.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "FE-1-1",
+              "title": "Design Add Task UI",
+              "description": "Create UI components for task input fields and add button.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-1-2",
+              "title": "Implement Add Task Logic",
+              "description": "Implement frontend logic to handle task creation and validation.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "BE-1-1",
+              "title": "Create Task Model and API Endpoint",
+              "description": "Design backend data model and implement API endpoint for creating tasks.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "QA-1-1",
+              "title": "Test Add Task Functionality",
+              "description": "Write and execute test cases for adding tasks, including validation.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            }
+          ]
+        },
+        {
+          "id": "FE-2",
+          "title": "Edit Task",
+          "description": "As a user, I want to edit an existing task's title and description so that I can update my tasks as needed.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "FE-2-1",
+              "title": "Design Edit Task UI",
+              "description": "Create UI for editing tasks inline or in a modal.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-2-2",
+              "title": "Implement Edit Task Logic",
+              "description": "Implement frontend logic for editing and saving task changes.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "BE-2-1",
+              "title": "Update Task API Endpoint",
+              "description": "Implement backend endpoint for updating tasks.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "QA-2-1",
+              "title": "Test Edit Task Functionality",
+              "description": "Write and execute test cases for editing tasks.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        },
+        {
+          "id": "FE-3",
+          "title": "Mark Task as Completed",
+          "description": "As a user, I want to mark a task as completed so that I can track which tasks are done.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "FE-3-1",
+              "title": "Design Completed Task UI",
+              "description": "Update UI to visually distinguish completed tasks.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-3-2",
+              "title": "Implement Complete/Uncomplete Logic",
+              "description": "Implement frontend logic for marking tasks as completed/uncompleted.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "BE-3-1",
+              "title": "Update Task Status API",
+              "description": "Implement backend logic to update task completion status.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "QA-3-1",
+              "title": "Test Mark as Completed",
+              "description": "Write and execute test cases for marking tasks as completed/uncompleted.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            }
+          ]
+        },
+        {
+          "id": "FE-4",
+          "title": "Delete Task",
+          "description": "As a user, I want to delete a task so that I can remove tasks I no longer need.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "FE-4-1",
+              "title": "Design Delete Task UI",
+              "description": "Add delete button and confirmation prompt to task UI.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-4-2",
+              "title": "Implement Delete Task Logic",
+              "description": "Implement frontend logic for deleting tasks.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "BE-4-1",
+              "title": "Delete Task API Endpoint",
+              "description": "Implement backend endpoint for deleting tasks.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "QA-4-1",
+              "title": "Test Delete Task Functionality",
+              "description": "Write and execute test cases for deleting tasks.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        },
+        {
+          "id": "FE-5",
+          "title": "Display All Tasks in a List",
+          "description": "As a user, I want to see all my tasks in a list so that I can view and manage them easily.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "FE-5-1",
+              "title": "Design Task List UI",
+              "description": "Create UI for displaying tasks in a list format.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-5-2",
+              "title": "Implement Task List Rendering",
+              "description": "Implement frontend logic to render and update the task list.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "BE-5-1",
+              "title": "Get All Tasks API Endpoint",
+              "description": "Implement backend endpoint to fetch all tasks.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "QA-5-1",
+              "title": "Test Task List Display",
+              "description": "Write and execute test cases for displaying and updating the task list.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-2",
+      "title": "Responsive Web Application & Performance",
+      "description": "Ensure the To-Do List application is responsive and performs well on both desktop and mobile browsers, loading within 3 seconds. This epic is essential for user satisfaction and meeting technical requirements.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "UX-1",
+          "title": "Responsive UI Design",
+          "description": "As a user, I want the app to look good and be usable on both desktop and mobile devices.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "UX-1-1",
+              "title": "Design Responsive Layout",
+              "description": "Create wireframes and mockups for desktop and mobile views.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-6-1",
+              "title": "Implement Responsive Styles",
+              "description": "Develop CSS and frontend logic for responsive design.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "QA-6-1",
+              "title": "Test Responsiveness",
+              "description": "Test app on various devices and browsers for responsiveness.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        },
+        {
+          "id": "FE-7",
+          "title": "Performance Optimization",
+          "description": "As a user, I want the app to load quickly (within 3 seconds) so I can access my tasks without delay.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "FE-7-1",
+              "title": "Optimize Asset Loading",
+              "description": "Minimize and compress CSS, JS, and image assets.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-7-2",
+              "title": "Implement Code Splitting",
+              "description": "Split code to load only necessary modules on demand.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "QA-7-1",
+              "title": "Performance Testing",
+              "description": "Test and document app load times on various devices and networks.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-1",
+          "title": "Cross-Browser Compatibility",
+          "description": "As a user, I want the app to work correctly on all major browsers.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-1-1",
+              "title": "Set Up Browser Testing Matrix",
+              "description": "Define and document supported browsers and versions.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "QA-8-1",
+              "title": "Manual Cross-Browser Testing",
+              "description": "Test app manually on all supported browsers.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            },
+            {
+              "id": "QA-8-2",
+              "title": "Automated Cross-Browser Testing",
+              "description": "Set up automated tests for cross-browser compatibility.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-2",
+          "title": "Deployment Pipeline",
+          "description": "As a developer, I want a simple CI/CD pipeline so that the app can be deployed quickly and reliably.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-2-1",
+              "title": "Set Up CI/CD Pipeline",
+              "description": "Configure CI/CD for automated build and deployment.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-2-2",
+              "title": "Configure Hosting Environment",
+              "description": "Set up hosting (e.g., Vercel, Netlify, AWS) for the app.",
+              "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+              "assignee_name": "satheesh"
+            },
+            {
+              "id": "DEVOPS-2-3",
+              "title": "Implement Rollback Mechanism",
+              "description": "Ensure ability to revert to previous deployment if needed.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-3",
+      "title": "Product Management, QA, and Documentation",
+      "description": "Coordinate project management, quality assurance, and documentation to ensure successful delivery, maintainability, and knowledge transfer.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "PM-1",
+          "title": "Project Planning and Tracking",
+          "description": "As a product manager, I want to plan, track, and report on project progress to ensure timely delivery.",
+          "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+          "assignee_name": "Saran K",
+          "subtasks": [
+            {
+              "id": "PM-1-1",
+              "title": "Create Project Plan",
+              "description": "Develop detailed project plan and timeline.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            },
+            {
+              "id": "PM-1-2",
+              "title": "Set Up Tracking Tools",
+              "description": "Configure Jira/Trello for tracking epics, stories, and tasks.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            },
+            {
+              "id": "PM-1-3",
+              "title": "Provide Status Updates",
+              "description": "Prepare and share weekly status reports.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            }
+          ]
+        },
+        {
+          "id": "QA-9",
+          "title": "Comprehensive QA Testing",
+          "description": "As a QA engineer, I want to ensure the app is bug-free and meets requirements.",
+          "assignee": "712020:dhanushya",
+          "assignee_name": "",
+          "subtasks": [
+            {
+              "id": "QA-9-1",
+              "title": "Write Test Cases",
+              "description": "Develop test cases for all user stories.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            },
+            {
+              "id": "QA-9-2",
+              "title": "Execute Manual Testing",
+              "description": "Perform manual testing of all features.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            },
+            {
+              "id": "QA-9-3",
+              "title": "Regression Testing",
+              "description": "Conduct regression testing before release.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        },
+        {
+          "id": "DOC-1",
+          "title": "User and Developer Documentation",
+          "description": "As a developer, I want clear documentation so that users and future developers can understand and maintain the app.",
+          "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+          "assignee_name": "karthik",
+          "subtasks": [
+            {
+              "id": "DOC-1-1",
+              "title": "Write User Guide",
+              "description": "Document how to use the app for end users.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            },
+            {
+              "id": "DOC-1-2",
+              "title": "Write API Documentation",
+              "description": "Document all backend API endpoints.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "DOC-1-3",
+              "title": "Code Comments and README",
+              "description": "Add comments and create a README for the codebase.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

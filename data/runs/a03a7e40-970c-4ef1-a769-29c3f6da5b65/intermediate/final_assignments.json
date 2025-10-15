@@ -1,0 +1,820 @@
+{
+  "run_id": "a03a7e40-970c-4ef1-a769-29c3f6da5b65",
+  "saved_at": "2025-09-30T04:49:32.737Z",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "title": "Centralized Offer Management Platform (OMP) Development",
+      "description": "Design and implement a centralized Offer Management Platform (OMP) to onboard, manage, and approve/reject offers with maker-checker flows. This platform will serve as the single source of truth for all offer data, ensuring consistency and compliance across all digital touchpoints. Business justification: Enables unified, auditable, and efficient offer lifecycle management, reducing operational overhead and discrepancies.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "BE-1",
+          "title": "Backend Offer Onboarding and Management APIs",
+          "description": "Develop backend APIs for onboarding, updating, and managing offers, including support for OMP template ingestion and compliance with merchant/category standards.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-1-1",
+              "title": "Design Offer Data Model",
+              "description": "Design database schema and data model for offers, supporting all required fields from OMP template.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-1-2",
+              "title": "Implement Offer CRUD APIs",
+              "description": "Develop RESTful APIs for create, read, update, and delete operations on offers.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-1-3",
+              "title": "Validation and Compliance Layer",
+              "description": "Implement validation logic to ensure offer data matches OMP template and merchant/category standards.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-1-4",
+              "title": "Audit Logging",
+              "description": "Implement audit logging for all offer management actions.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-1-5",
+              "title": "API Documentation",
+              "description": "Document all offer management APIs for internal and external use.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-1-6",
+              "title": "Unit and Integration Testing",
+              "description": "Write and execute tests for all offer management APIs.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "FE-1",
+          "title": "Offer Management Portal UI",
+          "description": "Develop a user-friendly web interface for offer onboarding, management, and approval/rejection with maker-checker flows.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "FE-1-1",
+              "title": "UI Wireframes and Prototypes",
+              "description": "Design wireframes and interactive prototypes for OMP screens.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-1-2",
+              "title": "Implement Offer Onboarding Screens",
+              "description": "Develop frontend components for offer creation and editing.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-1-3",
+              "title": "Maker-Checker Workflow UI",
+              "description": "Implement UI for approval/rejection flows with status tracking.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-1-4",
+              "title": "Role-Based Access Control",
+              "description": "Integrate RBAC to restrict access based on user roles (maker/checker/admin).",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-1-5",
+              "title": "Frontend-Backend Integration",
+              "description": "Integrate UI with backend offer management APIs.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-1-6",
+              "title": "UI Testing and Bug Fixes",
+              "description": "Conduct UI testing and resolve identified issues.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            }
+          ]
+        },
+        {
+          "id": "QA-1",
+          "title": "OMP End-to-End Testing",
+          "description": "Perform comprehensive QA for OMP, covering functional, integration, and security aspects.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-1-1",
+              "title": "Test Case Design",
+              "description": "Write detailed test cases for all OMP features.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-1-2",
+              "title": "Functional Testing",
+              "description": "Execute functional tests for OMP workflows.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-1-3",
+              "title": "Security and Access Control Testing",
+              "description": "Test RBAC and security features for vulnerabilities.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-1-4",
+              "title": "Regression Testing",
+              "description": "Conduct regression testing after bug fixes.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "PM-1",
+          "title": "Offer Management Platform Go-Live Planning",
+          "description": "Coordinate go-live activities, user training, and post-launch support for OMP.",
+          "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+          "assignee_name": "Saran K",
+          "subtasks": [
+            {
+              "id": "PM-1-1",
+              "title": "Go-Live Checklist Preparation",
+              "description": "Prepare and review go-live checklist for OMP.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            },
+            {
+              "id": "PM-1-2",
+              "title": "User Training Sessions",
+              "description": "Conduct training for OMP users (makers/checkers/admins).",
+              "assignee": "712020:9a0e7522-260c-427c-b390-f5027156b72b",
+              "assignee_name": "sujee"
+            },
+            {
+              "id": "PM-1-3",
+              "title": "Post-Launch Support Plan",
+              "description": "Define and communicate support plan for OMP users.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-2",
+      "title": "Unified Customer Identification and Intelligence Integration",
+      "description": "Implement a unified customer identification system using hashed mobile numbers and integrate monthly merchant recommendation files from CIU to Crayon Data. Business justification: Ensures accurate, privacy-compliant customer targeting and enables personalized offer delivery across all digital assets.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "DE-1",
+          "title": "Hashed Mobile Number Customer Identifier",
+          "description": "Develop and integrate a system to generate, store, and use hashed mobile numbers as unique customer identifiers across all platforms.",
+          "assignee": "712020:dhanushya",
+          "assignee_name": "",
+          "subtasks": [
+            {
+              "id": "DE-1-1",
+              "title": "Hashing Algorithm Implementation",
+              "description": "Implement secure hashing algorithm for mobile numbers.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            },
+            {
+              "id": "DE-1-2",
+              "title": "Integration with Offer Selection Engine",
+              "description": "Integrate hashed identifier into offer selection and delivery workflows.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            },
+            {
+              "id": "DE-1-3",
+              "title": "Compliance and Security Review",
+              "description": "Review implementation for compliance with privacy and security standards.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        },
+        {
+          "id": "DE-2",
+          "title": "CIU to Crayon Data File Ingestion Pipeline",
+          "description": "Build a secure, scalable pipeline to ingest monthly top 40 merchant recommendation files (parquet format, up to 50GB) from CIU via SFTP.",
+          "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+          "assignee_name": "karthik",
+          "subtasks": [
+            {
+              "id": "DE-2-1",
+              "title": "SFTP Integration and Automation",
+              "description": "Automate secure SFTP file transfer and monitoring.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            },
+            {
+              "id": "DE-2-2",
+              "title": "Parquet File Parsing and Validation",
+              "description": "Parse and validate parquet files, including checksum verification.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            },
+            {
+              "id": "DE-2-3",
+              "title": "Data Mapping and Storage",
+              "description": "Map merchant recommendations to hashed customer identifiers and store in database.",
+              "assignee": "712020:dhanushya",
+              "assignee_name": ""
+            },
+            {
+              "id": "DE-2-4",
+              "title": "Error Handling and Alerting",
+              "description": "Implement error handling and alerting for failed ingestions.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        },
+        {
+          "id": "QA-2",
+          "title": "Customer Data QA and Validation",
+          "description": "Test and validate the customer identification and data ingestion processes for accuracy, completeness, and compliance.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-2-1",
+              "title": "Test Data Generation",
+              "description": "Generate test data for all customer identifier and ingestion scenarios.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-2-2",
+              "title": "Ingestion Pipeline Testing",
+              "description": "Test file ingestion, parsing, and mapping logic.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-2-3",
+              "title": "Compliance Testing",
+              "description": "Validate privacy and security compliance of data handling.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-1",
+          "title": "SFTP and Data Pipeline Infrastructure Setup",
+          "description": "Provision and configure secure, scalable infrastructure for SFTP and data pipelines.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-1-1",
+              "title": "SFTP Server Provisioning",
+              "description": "Set up and secure SFTP server for file transfers.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-1-2",
+              "title": "Pipeline Resource Allocation",
+              "description": "Allocate compute and storage resources for ingestion pipeline.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-1-3",
+              "title": "Monitoring and Alerting Setup",
+              "description": "Implement monitoring and alerting for SFTP and pipeline health.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "PM-2",
+          "title": "Stakeholder Coordination for Data Sharing",
+          "description": "Coordinate with HDFC Bank and CIU teams for timely and accurate data sharing.",
+          "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+          "assignee_name": "Saran K",
+          "subtasks": [
+            {
+              "id": "PM-2-1",
+              "title": "Data Sharing Agreement Review",
+              "description": "Review and finalize data sharing agreements with stakeholders.",
+              "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+              "assignee_name": "babu"
+            },
+            {
+              "id": "PM-2-2",
+              "title": "Monthly Data Sharing Coordination",
+              "description": "Coordinate monthly data sharing and ingestion timelines.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-3",
+      "title": "Offer Selection Engine and Personalization",
+      "description": "Develop a rule-engine based offer selection engine that supports both real-time API-based and batch-based NBO delivery, including dynamic personalization and marketing veto logic. Business justification: Drives customer engagement by ensuring relevant, consistent, and prioritized offers across all digital assets.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "BE-2",
+          "title": "Rule Engine Implementation",
+          "description": "Design and implement a configurable rule engine for offer selection, supporting business rules, personalization, and marketing veto.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-2-1",
+              "title": "Rule Engine Design",
+              "description": "Design architecture and data model for rule engine.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-2-2",
+              "title": "Rule Engine Core Implementation",
+              "description": "Develop core logic for rule evaluation and execution.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-2-3",
+              "title": "Personalization Logic Integration",
+              "description": "Integrate customer data for dynamic personalization.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-2-4",
+              "title": "Marketing Veto Logic",
+              "description": "Implement logic for prioritized merchant display based on marketing veto.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-2-5",
+              "title": "Rule Management UI/API",
+              "description": "Develop UI/API for business users to manage rules.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        },
+        {
+          "id": "BE-3",
+          "title": "Batch and Real-Time NBO Delivery",
+          "description": "Implement both real-time API-based and batch-based NBO delivery mechanisms to support all digital assets and mitigate system stability risks.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-3-1",
+              "title": "Real-Time API Implementation",
+              "description": "Develop and optimize real-time API for NBO delivery.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-3-2",
+              "title": "Batch File Generation Logic",
+              "description": "Implement logic to generate batch files for non-API integrated assets.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-3-3",
+              "title": "Consistency Validation",
+              "description": "Ensure outputs from batch and API are consistent for the same customer.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-3-4",
+              "title": "Performance Optimization",
+              "description": "Optimize API and batch processes for scale and speed.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "QA-3",
+          "title": "Offer Selection Engine QA",
+          "description": "Test rule engine, personalization, and NBO delivery for accuracy, performance, and reliability.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-3-1",
+              "title": "Rule Engine Test Case Design",
+              "description": "Design test cases for all rule and personalization scenarios.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-3-2",
+              "title": "Performance and Load Testing",
+              "description": "Test API and batch delivery under expected and peak loads.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-3-3",
+              "title": "Regression and Consistency Testing",
+              "description": "Validate consistency between API and batch outputs.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "PM-3",
+          "title": "Business Rule Definition and Approval",
+          "description": "Work with business stakeholders to define, document, and approve all offer selection and personalization rules.",
+          "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+          "assignee_name": "Saran K",
+          "subtasks": [
+            {
+              "id": "PM-3-1",
+              "title": "Rule Workshop Facilitation",
+              "description": "Facilitate workshops to gather and refine business rules.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            },
+            {
+              "id": "PM-3-2",
+              "title": "Rule Documentation and Versioning",
+              "description": "Document rules and maintain version history.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-2",
+          "title": "Offer Engine Infrastructure and Scalability",
+          "description": "Provision and configure infrastructure to support 10M API calls/month (scalable to 40M), including monitoring and auto-scaling.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-2-1",
+              "title": "API Gateway and Load Balancer Setup",
+              "description": "Configure API gateway and load balancers for high availability.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-2-2",
+              "title": "Auto-Scaling Configuration",
+              "description": "Set up auto-scaling policies for offer engine services.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-2-3",
+              "title": "Monitoring and Alerting",
+              "description": "Implement monitoring and alerting for API and batch delivery.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "LEGAL-1",
+          "title": "Compliance Review for Offer Selection and Delivery",
+          "description": "Ensure all offer selection and delivery processes comply with regulatory and privacy requirements.",
+          "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+          "assignee_name": "babu",
+          "subtasks": [
+            {
+              "id": "LEGAL-1-1",
+              "title": "Regulatory Review",
+              "description": "Review offer selection and delivery for regulatory compliance.",
+              "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+              "assignee_name": "babu"
+            },
+            {
+              "id": "LEGAL-1-2",
+              "title": "Privacy Impact Assessment",
+              "description": "Conduct privacy impact assessment for all customer data flows.",
+              "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+              "assignee_name": "babu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-4",
+      "title": "Choice API and Smartbuy Portal Integration",
+      "description": "Integrate the Choice API with the Smartbuy portal for real-time NBO delivery, including SSO, interaction tracking, and seamless user experience. Business justification: Delivers consistent, personalized offers to customers on Smartbuy, increasing engagement and conversion.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "FE-2",
+          "title": "Smartbuy Portal UI Integration",
+          "description": "Integrate Choice API with Smartbuy frontend to display NBOs, including SSO and interaction tracking (like/dislike, views, bookmarks).",
+          "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+          "assignee_name": "anirudh",
+          "subtasks": [
+            {
+              "id": "FE-2-1",
+              "title": "API Integration with Smartbuy UI",
+              "description": "Integrate Choice API endpoints with Smartbuy frontend components.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-2-2",
+              "title": "SSO Integration",
+              "description": "Implement SSO for seamless user authentication and redirection.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-2-3",
+              "title": "Interaction Tracking Implementation",
+              "description": "Capture and store user interactions (like/dislike, views, bookmarks).",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-2-4",
+              "title": "UI Testing and Bug Fixes",
+              "description": "Test UI integration and resolve issues.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "BE-4",
+          "title": "Backend Support for Smartbuy Integration",
+          "description": "Provide backend support for Smartbuy integration, including APIs for interaction tracking and SSO session management.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "BE-4-1",
+              "title": "Interaction Tracking API Implementation",
+              "description": "Develop backend APIs to record and retrieve user interactions.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-4-2",
+              "title": "SSO Session Management",
+              "description": "Implement backend logic for SSO session validation and management.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-4-3",
+              "title": "Security and Compliance Review",
+              "description": "Review and secure all data flows for compliance.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-4-4",
+              "title": "API Documentation",
+              "description": "Document all Smartbuy integration APIs.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        },
+        {
+          "id": "QA-4",
+          "title": "Smartbuy Integration QA",
+          "description": "Test Smartbuy portal integration for NBO display, SSO, and interaction tracking.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-4-1",
+              "title": "Integration Test Case Design",
+              "description": "Design test cases for all Smartbuy integration scenarios.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-4-2",
+              "title": "Functional Testing",
+              "description": "Test NBO display, SSO, and interaction tracking.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-4-3",
+              "title": "Regression Testing",
+              "description": "Conduct regression testing after bug fixes.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-3",
+          "title": "Smartbuy Integration Infrastructure",
+          "description": "Provision and configure infrastructure for Smartbuy integration, including API whitelisting and environment setup.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-3-1",
+              "title": "API Whitelisting Configuration",
+              "description": "Coordinate and configure API whitelisting between Crayon Data and R360.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-3-2",
+              "title": "Environment Setup",
+              "description": "Set up and validate stage and production environments for integration.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "PM-4",
+          "title": "Smartbuy Go-Live and Support",
+          "description": "Plan and coordinate Smartbuy integration go-live, user training, and support.",
+          "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+          "assignee_name": "Saran K",
+          "subtasks": [
+            {
+              "id": "PM-4-1",
+              "title": "Go-Live Planning",
+              "description": "Prepare go-live checklist and coordinate launch activities.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            },
+            {
+              "id": "PM-4-2",
+              "title": "Support Plan Definition",
+              "description": "Define and communicate support plan for Smartbuy integration.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-5",
+      "title": "Batch NBO Delivery for Non-API Integrated Assets",
+      "description": "Implement batch file generation and delivery for NBOs to non-API integrated assets (e.g., netbanking app, website), including support for store locations via zip codes. Business justification: Ensures all customers receive consistent offers, regardless of digital asset integration maturity.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "BE-5",
+          "title": "Batch File Generation for NBO Delivery",
+          "description": "Develop logic to generate and deliver batch files for NBOs, including support for store locations via zip codes.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-5-1",
+              "title": "Batch File Format Design",
+              "description": "Define and document batch file format for NBO delivery.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-5-2",
+              "title": "Batch Generation Logic Implementation",
+              "description": "Implement logic to generate batch files with NBOs and store locations.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-5-3",
+              "title": "Checksum and Validation",
+              "description": "Add checksum and validation logic for file integrity.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-5-4",
+              "title": "Batch Delivery Automation",
+              "description": "Automate delivery of batch files to designated endpoints.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "QA-5",
+          "title": "Batch NBO Delivery QA",
+          "description": "Test batch file generation, delivery, and integrity for all supported assets.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-5-1",
+              "title": "Batch File Test Case Design",
+              "description": "Design test cases for batch file generation and delivery.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-5-2",
+              "title": "Batch File Validation Testing",
+              "description": "Test batch files for format, content, and checksum.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-5-3",
+              "title": "Regression Testing",
+              "description": "Conduct regression testing after bug fixes.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-4",
+          "title": "Batch Delivery Infrastructure Setup",
+          "description": "Provision and configure infrastructure for secure batch file delivery.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-4-1",
+              "title": "Batch Delivery Endpoint Setup",
+              "description": "Set up secure endpoints for batch file delivery.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-4-2",
+              "title": "Monitoring and Alerting",
+              "description": "Implement monitoring and alerting for batch delivery failures.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "PM-5",
+          "title": "Batch Delivery Coordination",
+          "description": "Coordinate with HDFC Bank IT for batch delivery schedules and issue resolution.",
+          "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+          "assignee_name": "Saran K",
+          "subtasks": [
+            {
+              "id": "PM-5-1",
+              "title": "Schedule Coordination",
+              "description": "Coordinate batch delivery schedules with HDFC Bank IT.",
+              "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+              "assignee_name": "satheesh"
+            },
+            {
+              "id": "PM-5-2",
+              "title": "Issue Resolution Planning",
+              "description": "Define and communicate process for batch delivery issue resolution.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

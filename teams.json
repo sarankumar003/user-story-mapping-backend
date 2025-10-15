@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "total_users": 11,
+    "total_teams": 2,
+    "generated_at": "unknown"
+  },
+  "teams": {
+    "jira-users-crayonhackathon2025": [
+      {
+        "display_name": "Saran K",
+        "account_id": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+        "email_address": "saranbharathi22333@gmail.com",
+        "projects": []
+      },
+      {
+        "display_name": "sivaseelan",
+        "account_id": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "naveen",
+        "account_id": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "dhanushya",
+        "account_id": "712020:e2598059-441e-4074-80fc-d51b8f3dc5ed",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "arun",
+        "account_id": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "sujee",
+        "account_id": "712020:9a0e7522-260c-427c-b390-f5027156b72b",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "ashwin",
+        "account_id": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "satheesh",
+        "account_id": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "karthik",
+        "account_id": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "anirudh",
+        "account_id": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+        "email_address": null,
+        "projects": []
+      },
+      {
+        "display_name": "babu",
+        "account_id": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+        "email_address": null,
+        "projects": []
+      }
+    ],
+    "org-admins": [
+      {
+        "display_name": "Saran K",
+        "account_id": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+        "email_address": "saranbharathi22333@gmail.com",
+        "projects": []
+      }
+    ]
+  },
+  "all_users": [
+    {
+      "display_name": "Saran K",
+      "account_id": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "email_address": "saranbharathi22333@gmail.com",
+      "teams": [
+        "jira-users-crayonhackathon2025",
+        "org-admins"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "sivaseelan",
+      "account_id": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "naveen",
+      "account_id": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "dhanushya",
+      "account_id": "712020:e2598059-441e-4074-80fc-d51b8f3dc5ed",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "arun",
+      "account_id": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "sujee",
+      "account_id": "712020:9a0e7522-260c-427c-b390-f5027156b72b",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "ashwin",
+      "account_id": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "satheesh",
+      "account_id": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "karthik",
+      "account_id": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "anirudh",
+      "account_id": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    },
+    {
+      "display_name": "babu",
+      "account_id": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+      "email_address": null,
+      "teams": [
+        "jira-users-crayonhackathon2025"
+      ],
+      "projects": []
+    }
+  ]
+}

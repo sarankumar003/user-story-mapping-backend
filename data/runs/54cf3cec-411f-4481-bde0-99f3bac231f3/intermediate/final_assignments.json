@@ -1,0 +1,688 @@
+{
+  "run_id": "54cf3cec-411f-4481-bde0-99f3bac231f3",
+  "saved_at": "2025-09-25T03:43:15.034Z",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "title": "Centralized Offer Recommendation Engine (Choice API)",
+      "description": "Develop and deploy a centralized, rule-based offer recommendation engine (Choice API) to unify customer offers across all HDFC Bank digital assets. This engine will provide personalized, consistent, and scalable recommendations, supporting both batch and real-time delivery. Business justification: Enables single source of truth, reduces fragmentation, and increases customer engagement.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "STORY-1.1",
+          "title": "Design Rule-Based Recommendation Engine",
+          "description": "Architect and design a scalable, rule-based engine for personalized offer recommendations, supporting ETB/NTB segmentation, fatigue factor, and merchant filtering.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "TASK-1.1.1",
+              "title": "Draft Engine Architecture",
+              "description": "Create high-level architecture diagram and component breakdown for the recommendation engine.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-1.1.2",
+              "title": "Define Rule Logic",
+              "description": "Document business rules for ETB/NTB, fatigue, merchant filtering, and card type mapping.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-1.1.3",
+              "title": "Stakeholder Review",
+              "description": "Present design to stakeholders and incorporate feedback.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-1.1.4",
+              "title": "Finalize Design Documentation",
+              "description": "Publish final design document with all required details.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "STORY-1.2",
+          "title": "Develop Choice API Backend",
+          "description": "Implement the backend services for the Choice API, including endpoints for real-time and batch recommendations, rule engine integration, and customer identifier handling.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "TASK-1.2.1",
+              "title": "Set Up API Framework",
+              "description": "Initialize backend project and set up API framework with required dependencies.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-1.2.2",
+              "title": "Implement Real-Time Recommendation Endpoint",
+              "description": "Develop endpoint for real-time offer recommendations.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-1.2.3",
+              "title": "Implement Batch Recommendation Endpoint",
+              "description": "Develop endpoint for batch-based recommendations.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-1.2.4",
+              "title": "Integrate Rule Engine",
+              "description": "Integrate rule engine logic with API endpoints.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-1.2.5",
+              "title": "Unit and Integration Testing",
+              "description": "Write and execute unit and integration tests for all endpoints.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "STORY-1.3",
+          "title": "API Security and Whitelisting",
+          "description": "Implement API security measures, including whitelisting between Crayon Data and R360, and ensure encrypted data transfer.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "TASK-1.3.1",
+              "title": "Configure API Whitelisting",
+              "description": "Set up IP whitelisting between Crayon Data and R360 environments.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-1.3.2",
+              "title": "Implement Encrypted Transfer",
+              "description": "Ensure all API traffic is encrypted using TLS/SSL.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-1.3.3",
+              "title": "Document Security Measures",
+              "description": "Create documentation for all security configurations and protocols.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "STORY-1.4",
+          "title": "Performance and Scalability Testing",
+          "description": "Test the Choice API for performance and scalability to support 10M API calls/month (MVP1) and plan for 40M/month.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "TASK-1.4.1",
+              "title": "Set Up Load Testing Tools",
+              "description": "Configure and deploy load testing tools for API endpoints.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-1.4.2",
+              "title": "Execute Load Tests",
+              "description": "Run load tests simulating 10M API calls/month.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-1.4.3",
+              "title": "Analyze and Optimize",
+              "description": "Analyze results, identify bottlenecks, and optimize API performance.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-2",
+      "title": "Offer Management Portal (OMP) Development",
+      "description": "Build a centralized Offer Management Portal for onboarding, approval, and management of offers. Includes maker-checker flows, offer ingestion, and support for multiple offer categories. Business justification: Streamlines offer onboarding, ensures compliance, and supports business agility.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "STORY-2.1",
+          "title": "Design OMP User Interface",
+          "description": "Design the UI/UX for the Offer Management Portal, ensuring usability for onboarding teams and compliance with HDFC Bank branding.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "TASK-2.1.1",
+              "title": "Create Wireframes",
+              "description": "Develop wireframes for all OMP screens.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "TASK-2.1.2",
+              "title": "Design UI Mockups",
+              "description": "Create high-fidelity UI mockups based on wireframes.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "TASK-2.1.3",
+              "title": "Stakeholder Review",
+              "description": "Present designs to onboarding teams and incorporate feedback.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "STORY-2.2",
+          "title": "Develop OMP Backend Services",
+          "description": "Implement backend services for offer ingestion, approval/rejection, and maker-checker flows.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "TASK-2.2.1",
+              "title": "Implement Offer Ingestion API",
+              "description": "Develop API for ingesting offers in OMP format.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "TASK-2.2.2",
+              "title": "Develop Maker-Checker Logic",
+              "description": "Implement maker-checker approval/rejection workflow.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "TASK-2.2.3",
+              "title": "Set Up Audit Logging",
+              "description": "Ensure all actions are logged for compliance.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "STORY-2.3",
+          "title": "Integrate OMP with Choice API",
+          "description": "Enable seamless integration between OMP and the Choice API for real-time offer updates and approvals.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "TASK-2.3.1",
+              "title": "Develop Integration Layer",
+              "description": "Build middleware or direct integration between OMP and Choice API.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "TASK-2.3.2",
+              "title": "Implement Sync Mechanism",
+              "description": "Ensure offer updates are pushed to Choice API in near real-time.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "TASK-2.3.3",
+              "title": "Test Integration",
+              "description": "Perform end-to-end testing of OMP and Choice API integration.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "STORY-2.4",
+          "title": "User Access Management and SSO Integration",
+          "description": "Implement user access controls and integrate SSO for onboarding teams and approvers.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "TASK-2.4.1",
+              "title": "Implement Role-Based Access",
+              "description": "Develop user roles and permissions for OMP.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "TASK-2.4.2",
+              "title": "Integrate SSO",
+              "description": "Integrate SSO for seamless user login.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "TASK-2.4.3",
+              "title": "Document User Management",
+              "description": "Create documentation for user provisioning and deprovisioning.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-3",
+      "title": "Data Engineering: CIU File Handling and Customer Identifier Management",
+      "description": "Establish robust processes for monthly SFTP transfer, ingestion, and validation of CIU files (parquet, up to 50GB), ensuring consistent hashed mobile number mapping and card type validation. Business justification: Accurate customer segmentation and offer personalization depend on reliable data ingestion.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "STORY-3.1",
+          "title": "Set Up SFTP Infrastructure",
+          "description": "Provision and configure secure SFTP infrastructure for monthly CIU file transfers, including encryption and checksum validation.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "TASK-3.1.1",
+              "title": "Provision SFTP Server",
+              "description": "Set up SFTP server with required storage and access controls.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "TASK-3.1.2",
+              "title": "Configure Encryption",
+              "description": "Enable encryption for all SFTP transfers.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "TASK-3.1.3",
+              "title": "Implement Checksum Validation",
+              "description": "Set up checksum validation for file integrity.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "TASK-3.1.4",
+              "title": "Test File Transfer",
+              "description": "Conduct test transfer with sample CIU file.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "STORY-3.2",
+          "title": "CIU File Ingestion and Validation Pipeline",
+          "description": "Develop automated pipelines for ingesting, validating, and processing CIU files, ensuring data consistency and quality.",
+          "assignee": "712020:e2598059-441e-4074-80fc-d51b8f3dc5ed",
+          "assignee_name": "dhanushya",
+          "subtasks": [
+            {
+              "id": "TASK-3.2.1",
+              "title": "Develop Ingestion Pipeline",
+              "description": "Build ETL pipeline for CIU file ingestion.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            },
+            {
+              "id": "TASK-3.2.2",
+              "title": "Implement Data Validation",
+              "description": "Validate hashed mobile number mapping and card type consistency.",
+              "assignee": "712020:e2598059-441e-4074-80fc-d51b8f3dc5ed",
+              "assignee_name": "dhanushya"
+            },
+            {
+              "id": "TASK-3.2.3",
+              "title": "Set Up Error Reporting",
+              "description": "Configure error reporting and alerting for data issues.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        },
+        {
+          "id": "STORY-3.3",
+          "title": "Batch File Generation for Non-Smartbuy Assets",
+          "description": "Generate batch files with top 5 merchants/offers per customer for non-Smartbuy assets, ensuring correct formatting and delivery.",
+          "assignee": "712020:e2598059-441e-4074-80fc-d51b8f3dc5ed",
+          "assignee_name": "dhanushya",
+          "subtasks": [
+            {
+              "id": "TASK-3.3.1",
+              "title": "Develop Batch File Generator",
+              "description": "Implement logic to generate batch files for non-Smartbuy assets.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            },
+            {
+              "id": "TASK-3.3.2",
+              "title": "Format and Validate Output",
+              "description": "Ensure output files meet required format and validation criteria.",
+              "assignee": "712020:e2598059-441e-4074-80fc-d51b8f3dc5ed",
+              "assignee_name": "dhanushya"
+            },
+            {
+              "id": "TASK-3.3.3",
+              "title": "Coordinate Delivery",
+              "description": "Deliver files to relevant asset-owning teams and confirm receipt.",
+              "assignee": "712020:1028cd78-a3ee-4236-ab16-9fd7850f90c3",
+              "assignee_name": "karthik"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-4",
+      "title": "Frontend Integration and User Experience",
+      "description": "Integrate Choice API with Smartbuy and other digital assets, ensuring seamless SSO, consistent UI, and interaction capture (like/dislike, bookmark, views). Business justification: Delivers unified, personalized customer experience and increases engagement.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "STORY-4.1",
+          "title": "Integrate Choice API with Smartbuy Frontend",
+          "description": "Connect Smartbuy frontend (R360) with Choice API for real-time offer recommendations and interaction capture.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "TASK-4.1.1",
+              "title": "Implement API Integration",
+              "description": "Connect frontend to Choice API endpoints.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "TASK-4.1.2",
+              "title": "Develop Interaction Capture Logic",
+              "description": "Implement logic for capturing user interactions (like/dislike, bookmark, views).",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "TASK-4.1.3",
+              "title": "End-to-End Testing",
+              "description": "Test integration and interaction capture across all supported devices.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "STORY-4.2",
+          "title": "Implement SSO Token-Based Redirection",
+          "description": "Enable seamless SSO-based redirection between digital assets for unified customer journeys.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "TASK-4.2.1",
+              "title": "Integrate SSO SDK",
+              "description": "Integrate SSO SDK or libraries into frontend applications.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "TASK-4.2.2",
+              "title": "Implement Token Handling",
+              "description": "Develop logic for handling SSO tokens and session management.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "TASK-4.2.3",
+              "title": "Test Redirection Flows",
+              "description": "Test SSO redirection and session continuity across all assets.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "STORY-4.3",
+          "title": "UI Consistency and Accessibility Review",
+          "description": "Ensure consistent UI and accessibility standards across all integrated digital assets.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "TASK-4.3.1",
+              "title": "Conduct UI Review",
+              "description": "Review UI across all assets for consistency.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "TASK-4.3.2",
+              "title": "Accessibility Testing",
+              "description": "Test frontend for accessibility compliance.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "TASK-4.3.3",
+              "title": "Stakeholder Sign-Off",
+              "description": "Obtain sign-off from design and product teams.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-5",
+      "title": "Compliance, Legal, and Operational Readiness",
+      "description": "Ensure all legal, compliance, HR, and operational requirements are met, including data privacy, regulatory checks, and cross-team coordination. Business justification: Mitigates risk, ensures regulatory compliance, and supports smooth go-live.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "STORY-5.1",
+          "title": "Legal and Compliance Review",
+          "description": "Conduct legal and compliance reviews for data handling, offer management, and customer privacy.",
+          "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+          "assignee_name": "babu",
+          "subtasks": [
+            {
+              "id": "TASK-5.1.1",
+              "title": "Schedule Legal Review",
+              "description": "Coordinate with legal team for review sessions.",
+              "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+              "assignee_name": "babu"
+            },
+            {
+              "id": "TASK-5.1.2",
+              "title": "Document Compliance Requirements",
+              "description": "List and document all compliance requirements for the project.",
+              "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+              "assignee_name": "babu"
+            },
+            {
+              "id": "TASK-5.1.3",
+              "title": "Obtain Sign-Off",
+              "description": "Secure sign-off from legal and compliance teams.",
+              "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+              "assignee_name": "babu"
+            }
+          ]
+        },
+        {
+          "id": "STORY-5.2",
+          "title": "HR and Access Approvals",
+          "description": "Obtain HR approvals for onboarding new team members and ensure all access rights are provisioned.",
+          "assignee": "712020:9a0e7522-260c-427c-b390-f5027156b72b",
+          "assignee_name": "sujee",
+          "subtasks": [
+            {
+              "id": "TASK-5.2.1",
+              "title": "Submit HR Requests",
+              "description": "Submit requests for new hires and access provisioning.",
+              "assignee": "712020:9a0e7522-260c-427c-b390-f5027156b72b",
+              "assignee_name": "sujee"
+            },
+            {
+              "id": "TASK-5.2.2",
+              "title": "Track Approvals",
+              "description": "Track and follow up on HR and access approvals.",
+              "assignee": "712020:9a0e7522-260c-427c-b390-f5027156b72b",
+              "assignee_name": "sujee"
+            },
+            {
+              "id": "TASK-5.2.3",
+              "title": "Update Documentation",
+              "description": "Update project documentation with access and HR approval details.",
+              "assignee": "712020:9a0e7522-260c-427c-b390-f5027156b72b",
+              "assignee_name": "sujee"
+            }
+          ]
+        },
+        {
+          "id": "STORY-5.3",
+          "title": "Operational Runbooks and Support Handover",
+          "description": "Prepare operational runbooks and conduct handover sessions with IT and support teams.",
+          "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+          "assignee_name": "satheesh",
+          "subtasks": [
+            {
+              "id": "TASK-5.3.1",
+              "title": "Draft Operational Runbooks",
+              "description": "Create detailed runbooks for SFTP, API, and OMP operations.",
+              "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+              "assignee_name": "satheesh"
+            },
+            {
+              "id": "TASK-5.3.2",
+              "title": "Conduct Handover Sessions",
+              "description": "Organize and conduct handover sessions with IT/support teams.",
+              "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+              "assignee_name": "satheesh"
+            },
+            {
+              "id": "TASK-5.3.3",
+              "title": "Obtain IT Sign-Off",
+              "description": "Secure IT team sign-off for operational readiness.",
+              "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+              "assignee_name": "satheesh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-6",
+      "title": "Testing, QA, and Documentation",
+      "description": "Comprehensive testing (unit, integration, UAT), documentation, and code review for all components. Business justification: Ensures quality, reliability, and maintainability of the OBOP solution.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "STORY-6.1",
+          "title": "Unit and Integration Testing",
+          "description": "Develop and execute unit and integration tests for backend, frontend, and data pipelines.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "TASK-6.1.1",
+              "title": "Write Unit Tests",
+              "description": "Develop unit tests for backend, frontend, and data components.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-6.1.2",
+              "title": "Develop Integration Tests",
+              "description": "Implement integration tests for API and data flows.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-6.1.3",
+              "title": "Configure CI/CD Test Runs",
+              "description": "Ensure all tests run in CI/CD pipeline.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        },
+        {
+          "id": "STORY-6.2",
+          "title": "User Acceptance Testing (UAT)",
+          "description": "Coordinate and execute UAT with business stakeholders, onboarding teams, and asset owners.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "TASK-6.2.1",
+              "title": "Draft UAT Plan",
+              "description": "Create detailed UAT plan with scenarios and test cases.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-6.2.2",
+              "title": "Coordinate UAT Sessions",
+              "description": "Schedule and facilitate UAT sessions with stakeholders.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-6.2.3",
+              "title": "Collect Feedback and Sign-Off",
+              "description": "Gather feedback, address issues, and obtain sign-off.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        },
+        {
+          "id": "STORY-6.3",
+          "title": "Documentation and Code Review",
+          "description": "Prepare technical documentation and conduct code reviews for all deliverables.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "TASK-6.3.1",
+              "title": "Prepare Technical Documentation",
+              "description": "Document architecture, APIs, data flows, and operational procedures.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "TASK-6.3.2",
+              "title": "Conduct Code Reviews",
+              "description": "Organize code review sessions for all major features.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "TASK-6.3.3",
+              "title": "Publish Documentation",
+              "description": "Publish all documentation to central repository and share with teams.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

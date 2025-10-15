@@ -1,0 +1,90 @@
+{
+  "project_name": "One Bank One Offer Portal (OBOP) MVP1",
+  "project_description": "OBOP is an initiative by HDFC Bank to unify and centralize the offer recommendation experience across all its digital assets. By leveraging a single set of APIs and a centralized intelligence engine, OBOP aims to provide a consistent, personalized, and seamless offer experience to customers, regardless of the touchpoint they use (e.g., Payzapp, Smartbuy, Netbanking, Mobile App).",
+  "objectives": [
+    "Provide a single source of truth for customer offers across all digital assets.",
+    "Unify the customer experience and ensure offer consistency across all touchpoints.",
+    "Increase customer engagement with offers.",
+    "Enable real-time and batch-based offer recommendations using centralized intelligence.",
+    "Facilitate seamless SSO and cross-portal navigation for customers."
+  ],
+  "scope": [
+    "In Scope (MVP1):",
+    "Integration of Smartbuy, Alliance, and Consumer Durable Loans offers.",
+    "Hashed mobile number-based customer identification.",
+    "Monthly CIU file with top 40 recommendations per customer.",
+    "Rule-engine based offer selection and real-time personalization.",
+    "Choice API integration with Smartbuy portal.",
+    "Offer Management Platform (OMP) with maker-checker flows.",
+    "Support for zip codes on store locations.",
+    "Onboarding of offers using OMP template.",
+    "Card type-based offer filtering and prioritization.",
+    "Batch file generation for non-Smartbuy assets (monthly/daily delta dumps).",
+    "SSO integration between HDFC assets and Smartbuy.",
+    "Out of Scope (MVP1):",
+    "Banking product/portfolio offers (e.g., personal loan, home loan).",
+    "Integration with third-party tools/software.",
+    "Easy EMI and other calculators.",
+    "Offer value derivation, voice/advanced search.",
+    "Real-time personalization on non-Smartbuy assets.",
+    "Interaction/performance tracking on non-Smartbuy assets.",
+    "Location-based offers for non-Smartbuy assets.",
+    "Front-end rendering on non-Smartbuy assets."
+  ],
+  "stakeholders": [
+    "HDFC Bank (primary stakeholder)",
+    "CMO of HDFC Bank (budget holder)",
+    "Offer onboarding teams (Smartbuy, Alliance, Payzapp, CDL)",
+    "Design team (Smartbuy portal front-end)",
+    "CIU team (customer intelligence, recommendations, hashed IDs)",
+    "Asset owning teams (Netbanking, HDFC website, etc.)",
+    "Crayon Data (choice API, backend intelligence, OMP)",
+    "R360 (Smartbuy front-end development and maintenance)"
+  ],
+  "key_features": [
+    "Centralized offer recommendation engine (choice API).",
+    "Unified customer identifier (hashed mobile number).",
+    "Monthly and daily batch file generation for NBOs.",
+    "Offer Management Platform with approval/rejection flows.",
+    "Personalized and generic offer lists (Curated offers, Top Trending, Top offers in city, Easy EMI/CDL).",
+    "Card type-based offer filtering and prioritization.",
+    "SSO integration for seamless cross-portal navigation.",
+    "Merchant and offer curation logic (repeat capping, fatigue factor, marketer’s veto).",
+    "Interaction capture (like/dislike, views, bookmarks).",
+    "Maker-checker user personas and flows."
+  ],
+  "technical_requirements": [
+    "Choice API to be integrated with Smartbuy and other digital assets.",
+    "Monthly CIU file ingestion (parquet format, SFTP transfer, up to 50GB).",
+    "Hashed mobile number as unique customer identifier.",
+    "Batch file generation (monthly full dump, daily delta dump) for non-Smartbuy assets.",
+    "Encrypted SFTP transfer with checksum validation.",
+    "Offer Management Platform (OMP) for centralized offer repository.",
+    "Single tenant architecture for HDFC data.",
+    "API/network whitelisting between Crayon Data and R360.",
+    "Stage and Production environments for integration and performance testing.",
+    "Support for 10 million API calls/month (MVP1), scalable to 40 million/month.",
+    "Standardized data formats for offer and customer files.",
+    "Integration with SSO for cross-portal authentication."
+  ],
+  "timeline_estimate": "Each sprint delivers ~2 features/improvements every 2 weeks; 5 working days for pipeline data publishing post CIU file validation; additional 5 days for major rule/structure changes. Full MVP1 timeline not explicitly stated.",
+  "risks": [
+    "Potential for inconsistent customer identifiers if CIU file is not maintained properly.",
+    "System stability concerns on HDFC assets due to API integrations (hence batch approach for some assets).",
+    "Dependency on timely and accurate data from CIU and offer onboarding teams.",
+    "Inability to track user interactions or performance on non-Smartbuy assets.",
+    "Delayed integration/testing due to network whitelisting or compliance sign-offs.",
+    "SFTP size and access management rests with HDFC Bank."
+  ],
+  "assumptions": [
+    "HDFC Bank will create and maintain a unified hashed mobile number for each customer.",
+    "Same rule engine will apply across all use cases.",
+    "Expected API traffic is 10 million/month for MVP1, scaling to 40 million/month.",
+    "For MVP1, HDFC Bank will share Alliance and Smartbuy offers in OMP template; from MVP2, all offers will be onboarded via OMP.",
+    "All ETB customers have debit cards; credit card possession depends on CIU file.",
+    "CIU will ensure consistent and complete customer data in each monthly file.",
+    "No real-time personalization or interaction tracking on non-Smartbuy assets.",
+    "No location-based offers for non-Smartbuy assets.",
+    "Front-end rendering on non-Smartbuy assets is HDFC Bank’s responsibility."
+  ]
+}

@@ -1,0 +1,335 @@
+[
+  {
+    "id": "54cf3cec-411f-4481-bde0-99f3bac231f3",
+    "file_name": "OBOP BRD-5th June'25.docx",
+    "file_path": "uploads\\20250924_222712_OBOP BRD-5th June'25.docx",
+    "file_size": 410750,
+    "created_at": "2025-09-24T22:27:12.760618",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-24T22:27:12.760618"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-24T22:27:48.573670",
+        "data": {
+          "summary_id": "54cf3cec-411f-4481-bde0-99f3bac231f3"
+        }
+      },
+      "decomposition": {
+        "status": "completed",
+        "timestamp": "2025-09-24T22:39:44.211329"
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "completed",
+        "timestamp": "2025-09-25T13:20:04.512427",
+        "data": {
+          "error": "'str' object has no attribute 'value'"
+        }
+      }
+    }
+  },
+  {
+    "id": "b7a457a4-4014-4cf1-a654-7c341a60cdac",
+    "file_name": "BRD2.docx",
+    "file_path": "uploads\\20250929_134543_BRD2.docx",
+    "file_size": 11981,
+    "created_at": "2025-09-29T13:45:43.716645",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-29T13:45:43.716645"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-29T13:45:48.363108",
+        "data": {
+          "summary_id": "b7a457a4-4014-4cf1-a654-7c341a60cdac"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "pending",
+        "timestamp": null
+      }
+    }
+  },
+  {
+    "id": "39b1296f-91d9-456e-b318-afe2b67baa49",
+    "file_name": "BRD1.docx",
+    "file_path": "uploads\\20250929_140107_BRD1.docx",
+    "file_size": 14898,
+    "created_at": "2025-09-29T14:01:07.541822",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-29T14:01:07.541822"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-29T14:01:19.959422",
+        "data": {
+          "summary_id": "39b1296f-91d9-456e-b318-afe2b67baa49"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "completed",
+        "timestamp": "2025-09-29T14:32:57.836931"
+      }
+    }
+  },
+  {
+    "id": "2416f868-aa8c-42c9-8fb4-539d1564b0fc",
+    "file_name": "OBOP BRD-5th June'25.docx",
+    "file_path": "uploads\\20250929_210829_OBOP BRD-5th June'25.docx",
+    "file_size": 410750,
+    "created_at": "2025-09-29T21:08:29.846635",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-29T21:08:29.846635"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-29T21:09:46.592226",
+        "data": {
+          "summary_id": "2416f868-aa8c-42c9-8fb4-539d1564b0fc"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "pending",
+        "timestamp": null
+      }
+    }
+  },
+  {
+    "id": "0262a7f6-6136-4195-ba21-820a63b6e32e",
+    "file_name": "BRD2.docx",
+    "file_path": "uploads\\20250929_213645_BRD2.docx",
+    "file_size": 11981,
+    "created_at": "2025-09-29T21:36:45.032676",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-29T21:36:45.032676"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-29T21:36:55.413396",
+        "data": {
+          "summary_id": "0262a7f6-6136-4195-ba21-820a63b6e32e"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "completed",
+        "timestamp": "2025-09-29T21:46:58.102474"
+      }
+    }
+  },
+  {
+    "id": "9675a839-e71a-4f8d-8977-61ad5f64d8dc",
+    "file_name": "BRD2.docx",
+    "file_path": "uploads\\20250929_220115_BRD2.docx",
+    "file_size": 11981,
+    "created_at": "2025-09-29T22:01:15.919230",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-29T22:01:15.919230"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-29T22:01:26.751156",
+        "data": {
+          "summary_id": "9675a839-e71a-4f8d-8977-61ad5f64d8dc"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "completed",
+        "timestamp": "2025-09-29T22:08:23.088688"
+      }
+    }
+  },
+  {
+    "id": "15d42416-e308-4274-a2c8-f3eaf23db364",
+    "file_name": "BRD2.docx",
+    "file_path": "uploads\\20250930_093737_BRD2.docx",
+    "file_size": 11981,
+    "created_at": "2025-09-30T09:37:37.052788",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-30T09:37:37.052788"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-30T09:37:42.341286",
+        "data": {
+          "summary_id": "15d42416-e308-4274-a2c8-f3eaf23db364"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "pending",
+        "timestamp": null
+      }
+    }
+  },
+  {
+    "id": "541bbd4b-8fd2-486a-a245-36b1d429768d",
+    "file_name": "BRD1.docx",
+    "file_path": "uploads\\20250930_095110_BRD1.docx",
+    "file_size": 14898,
+    "created_at": "2025-09-30T09:51:10.372187",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-30T09:51:10.372187"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-30T09:51:16.943114",
+        "data": {
+          "summary_id": "541bbd4b-8fd2-486a-a245-36b1d429768d"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "completed",
+        "timestamp": "2025-09-30T10:03:05.447804"
+      }
+    }
+  },
+  {
+    "id": "a03a7e40-970c-4ef1-a769-29c3f6da5b65",
+    "file_name": "OBOP BRD-5th June'25.docx",
+    "file_path": "uploads\\20250930_100523_OBOP BRD-5th June'25.docx",
+    "file_size": 410750,
+    "created_at": "2025-09-30T10:05:23.531387",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-09-30T10:05:23.531387"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-09-30T10:05:58.490642",
+        "data": {
+          "summary_id": "a03a7e40-970c-4ef1-a769-29c3f6da5b65"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "completed",
+        "timestamp": "2025-09-30T10:36:02.120401"
+      }
+    }
+  },
+  {
+    "id": "45502d26-2e82-4e09-95e0-f5cb660219f2",
+    "file_name": "BRD2.docx",
+    "file_path": "uploads\\20251014_215719_BRD2.docx",
+    "file_size": 11981,
+    "created_at": "2025-10-14T21:57:19.737031",
+    "status": "completed",
+    "steps": {
+      "upload": {
+        "status": "completed",
+        "timestamp": "2025-10-14T21:57:19.737031"
+      },
+      "summary": {
+        "status": "completed",
+        "timestamp": "2025-10-14T21:57:23.738301",
+        "data": {
+          "summary_id": "45502d26-2e82-4e09-95e0-f5cb660219f2"
+        }
+      },
+      "decomposition": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "gantt": {
+        "status": "pending",
+        "timestamp": null
+      },
+      "jira_sync": {
+        "status": "completed",
+        "timestamp": "2025-10-15T08:32:26.217585"
+      }
+    }
+  }
+]

@@ -1,0 +1,684 @@
+{
+  "run_id": "541bbd4b-8fd2-486a-a245-36b1d429768d",
+  "saved_at": "2025-09-30T04:27:24.696Z",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "title": "User Registration and Authentication",
+      "description": "Develop secure user registration and login functionality for customers and staff, enabling account creation, authentication, and profile management. This is foundational for personalized booking and secure access, directly supporting customer convenience and data security.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "FE-1",
+          "title": "Customer Registration UI",
+          "description": "As a new customer, I want to register for an account via web and mobile so that I can book and manage appointments.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "FE-1-1",
+              "title": "Design Registration Form",
+              "description": "Create responsive UI for registration form on web and mobile.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-1-2",
+              "title": "Implement Form Validation",
+              "description": "Add client-side validation for required fields and password strength.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-1-3",
+              "title": "Integrate with Backend API",
+              "description": "Connect registration form to backend registration endpoint.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "BE-1",
+          "title": "User Registration API",
+          "description": "As a backend developer, I need to implement secure APIs for user registration, including email verification and password encryption.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-1-1",
+              "title": "Create Registration Endpoint",
+              "description": "Develop REST API for user registration.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-1-2",
+              "title": "Implement Password Hashing",
+              "description": "Use industry-standard hashing for storing passwords.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-1-3",
+              "title": "Send Verification Email",
+              "description": "Integrate email service to send verification links.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        },
+        {
+          "id": "FE-2",
+          "title": "Login and Authentication UI",
+          "description": "As a user, I want to log in securely to access my account and manage appointments.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "FE-2-1",
+              "title": "Design Login Form",
+              "description": "Create responsive UI for login form.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-2-2",
+              "title": "Implement Authentication Flow",
+              "description": "Connect login form to backend authentication API.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            }
+          ]
+        },
+        {
+          "id": "BE-2",
+          "title": "Authentication API",
+          "description": "As a backend developer, I need to implement secure login and session management.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "BE-2-1",
+              "title": "Develop Login Endpoint",
+              "description": "Implement REST API for user authentication.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-2-2",
+              "title": "Implement Session Management",
+              "description": "Issue and validate JWT tokens for authenticated sessions.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-2-3",
+              "title": "Account Lockout Logic",
+              "description": "Add logic to lock accounts after repeated failed logins.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "QA-1",
+          "title": "User Registration & Authentication Testing",
+          "description": "As a QA engineer, I need to test registration and authentication flows for security and usability.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-1-1",
+              "title": "Functional Testing",
+              "description": "Test all registration and login flows.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-1-2",
+              "title": "Security Testing",
+              "description": "Test for vulnerabilities (e.g., SQL injection, weak passwords).",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-2",
+      "title": "Appointment Scheduling and Management",
+      "description": "Implement core appointment booking, rescheduling, and cancellation features for customers and staff. This epic is central to the business goal of reducing manual errors, optimizing resource utilization, and enhancing customer convenience.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "FE-3",
+          "title": "Appointment Booking UI",
+          "description": "As a customer, I want to search for available slots and book appointments via web and mobile.",
+          "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+          "assignee_name": "anirudh",
+          "subtasks": [
+            {
+              "id": "FE-3-1",
+              "title": "Design Calendar View",
+              "description": "Create responsive calendar UI for slot selection.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-3-2",
+              "title": "Implement Booking Flow",
+              "description": "Integrate UI with backend booking API.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "BE-3",
+          "title": "Appointment Booking API",
+          "description": "As a backend developer, I need to provide APIs for searching, booking, rescheduling, and cancelling appointments.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-3-1",
+              "title": "Develop Slot Search Endpoint",
+              "description": "Implement API to return available appointment slots.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-3-2",
+              "title": "Develop Booking Endpoint",
+              "description": "Implement API to create new bookings.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-3-3",
+              "title": "Develop Reschedule/Cancel Endpoints",
+              "description": "Implement APIs to reschedule and cancel appointments.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        },
+        {
+          "id": "FE-4",
+          "title": "Reschedule and Cancel UI",
+          "description": "As a customer, I want to reschedule or cancel my appointments online.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "FE-4-1",
+              "title": "Design Appointment List View",
+              "description": "Create UI to list and manage upcoming appointments.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-4-2",
+              "title": "Implement Reschedule/Cancel Flow",
+              "description": "Integrate UI with backend reschedule/cancel APIs.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            }
+          ]
+        },
+        {
+          "id": "QA-2",
+          "title": "Appointment Management Testing",
+          "description": "As a QA engineer, I need to test all appointment management flows for correctness and edge cases.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-2-1",
+              "title": "Functional Testing",
+              "description": "Test all appointment management flows.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-2-2",
+              "title": "Edge Case Testing",
+              "description": "Test for double bookings and invalid slot selection.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "PM-1",
+          "title": "Stakeholder Review and Feedback",
+          "description": "As a product manager, I need to review appointment management features with stakeholders and gather feedback.",
+          "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+          "assignee_name": "Saran K",
+          "subtasks": [
+            {
+              "id": "PM-1-1",
+              "title": "Prepare Demo",
+              "description": "Prepare demo environment and walkthrough.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            },
+            {
+              "id": "PM-1-2",
+              "title": "Document Feedback",
+              "description": "Collect and document stakeholder feedback.",
+              "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+              "assignee_name": "Saran K"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-3",
+      "title": "Automated Notifications and Reminders",
+      "description": "Implement automated email and SMS notifications for booking confirmations and reminders to reduce no-shows and improve customer experience.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "BE-4",
+          "title": "Notification Service Integration",
+          "description": "As a backend developer, I need to integrate with email and SMS providers to send notifications.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "BE-4-1",
+              "title": "Integrate Email Provider",
+              "description": "Set up and integrate transactional email service.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-4-2",
+              "title": "Integrate SMS Provider",
+              "description": "Set up and integrate SMS gateway for notifications.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-4-3",
+              "title": "Implement Notification Logging",
+              "description": "Log all sent and failed notifications for audit.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "BE-5",
+          "title": "Reminder Scheduler",
+          "description": "As a backend developer, I need to implement a scheduler to trigger reminders 24 hours before appointments.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-5-1",
+              "title": "Develop Reminder Scheduler",
+              "description": "Implement background job to trigger reminders.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-5-2",
+              "title": "Handle Missed Reminders",
+              "description": "Implement logic to retry or log missed reminders.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "QA-3",
+          "title": "Notification Testing",
+          "description": "As a QA engineer, I need to test all notification scenarios for accuracy and reliability.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-3-1",
+              "title": "Functional Notification Testing",
+              "description": "Test booking confirmations and reminders.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-3-2",
+              "title": "Failure Scenario Testing",
+              "description": "Test and verify logging of failed notifications.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "FE-5",
+          "title": "Notification Preferences UI",
+          "description": "As a customer, I want to manage my notification preferences (email/SMS) in my profile.",
+          "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+          "assignee_name": "anirudh",
+          "subtasks": [
+            {
+              "id": "FE-5-1",
+              "title": "Design Preferences UI",
+              "description": "Create UI for managing notification preferences.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-5-2",
+              "title": "Integrate with Backend",
+              "description": "Connect preferences UI to backend API.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "BE-6",
+          "title": "Notification Preferences API",
+          "description": "As a backend developer, I need to store and respect user notification preferences.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "BE-6-1",
+              "title": "Develop Preferences Endpoint",
+              "description": "Implement API to save and retrieve notification preferences.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-6-2",
+              "title": "Integrate Preferences with Notification Logic",
+              "description": "Update notification logic to respect user preferences.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-4",
+      "title": "Admin Dashboard and Reporting",
+      "description": "Develop an admin dashboard for staff to view, manage, and report on appointments, supporting operational efficiency and business insights.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "FE-6",
+          "title": "Admin Dashboard UI",
+          "description": "As an admin, I want a dashboard to view and manage all appointments.",
+          "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+          "assignee_name": "arun",
+          "subtasks": [
+            {
+              "id": "FE-6-1",
+              "title": "Design Dashboard Layout",
+              "description": "Create responsive dashboard UI for admins.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            },
+            {
+              "id": "FE-6-2",
+              "title": "Implement Appointment Management",
+              "description": "Integrate dashboard with backend appointment APIs.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            }
+          ]
+        },
+        {
+          "id": "BE-7",
+          "title": "Admin Management API",
+          "description": "As a backend developer, I need to provide APIs for admins to view, edit, and cancel appointments.",
+          "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+          "assignee_name": "sivaseelan",
+          "subtasks": [
+            {
+              "id": "BE-7-1",
+              "title": "Develop Admin Appointment Endpoints",
+              "description": "Implement APIs for admin appointment management.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            },
+            {
+              "id": "BE-7-2",
+              "title": "Implement Access Control",
+              "description": "Restrict endpoints to admin users only.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            }
+          ]
+        },
+        {
+          "id": "FE-7",
+          "title": "Reporting UI",
+          "description": "As an admin, I want to generate daily, weekly, and monthly reports on appointments.",
+          "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+          "assignee_name": "anirudh",
+          "subtasks": [
+            {
+              "id": "FE-7-1",
+              "title": "Design Reporting UI",
+              "description": "Create UI for report selection and display.",
+              "assignee": "712020:b24d82dc-9137-4e86-839d-135987b9d377",
+              "assignee_name": "arun"
+            },
+            {
+              "id": "FE-7-2",
+              "title": "Implement Export Functionality",
+              "description": "Enable CSV export for reports.",
+              "assignee": "712020:603329f9-a8bc-4cc2-831c-968d1bcda7f4",
+              "assignee_name": "anirudh"
+            }
+          ]
+        },
+        {
+          "id": "BE-8",
+          "title": "Reporting API",
+          "description": "As a backend developer, I need to provide APIs to generate and deliver appointment reports.",
+          "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+          "assignee_name": "naveen",
+          "subtasks": [
+            {
+              "id": "BE-8-1",
+              "title": "Develop Report Generation Logic",
+              "description": "Implement logic to aggregate and summarize appointment data.",
+              "assignee": "712020:451a761b-476d-44f8-a28f-4bf642917348",
+              "assignee_name": "sivaseelan"
+            },
+            {
+              "id": "BE-8-2",
+              "title": "Implement CSV Export",
+              "description": "Enable API to export reports as CSV.",
+              "assignee": "712020:6ef43350-55eb-49ad-aeaf-cb9807f21dd0",
+              "assignee_name": "naveen"
+            }
+          ]
+        },
+        {
+          "id": "QA-4",
+          "title": "Admin Dashboard & Reporting Testing",
+          "description": "As a QA engineer, I need to test admin dashboard and reporting features for accuracy and security.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-4-1",
+              "title": "Functional Testing",
+              "description": "Test all admin dashboard and reporting flows.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-4-2",
+              "title": "Security Testing",
+              "description": "Verify access control and data privacy.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EPIC-5",
+      "title": "Infrastructure, Security, and Compliance",
+      "description": "Set up cloud-based infrastructure, ensure data encryption, system availability, and compliance with security standards to support at least 500 concurrent users.",
+      "assignee": "712020:06da9bb0-aef1-4524-89c8-418636a8f4cb",
+      "assignee_name": "Saran K",
+      "stories": [
+        {
+          "id": "DEVOPS-1",
+          "title": "Cloud Infrastructure Setup",
+          "description": "As a DevOps engineer, I need to provision and configure cloud infrastructure for hosting the system.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-1-1",
+              "title": "Provision Cloud Resources",
+              "description": "Set up compute, storage, and networking resources.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-1-2",
+              "title": "Configure Environments",
+              "description": "Set up dev, test, and production environments.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-2",
+          "title": "SSL/TLS and Data Encryption",
+          "description": "As a DevOps engineer, I need to implement SSL/TLS for secure data transmission and ensure encryption at rest.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-2-1",
+              "title": "Implement SSL/TLS",
+              "description": "Configure SSL/TLS certificates for all endpoints.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-2-2",
+              "title": "Enable Data Encryption at Rest",
+              "description": "Configure database and storage encryption.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-3",
+          "title": "Monitoring and Availability",
+          "description": "As a DevOps engineer, I need to implement monitoring and alerting to ensure 99.5% system availability.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-3-1",
+              "title": "Set Up Monitoring Tools",
+              "description": "Implement monitoring for uptime and performance.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-3-2",
+              "title": "Configure Alerts",
+              "description": "Set up alerting for downtime and anomalies.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        },
+        {
+          "id": "QA-5",
+          "title": "Infrastructure and Security Testing",
+          "description": "As a QA engineer, I need to test infrastructure, security, and compliance requirements.",
+          "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+          "assignee_name": "anandh",
+          "subtasks": [
+            {
+              "id": "QA-5-1",
+              "title": "Penetration Testing",
+              "description": "Conduct security testing for vulnerabilities.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            },
+            {
+              "id": "QA-5-2",
+              "title": "Availability Testing",
+              "description": "Test system for uptime and failover.",
+              "assignee": "712020:e1ca41ce-959b-49e8-9004-f8d23c99613b",
+              "assignee_name": "anandh"
+            }
+          ]
+        },
+        {
+          "id": "IT-1",
+          "title": "Data Privacy and Compliance Review",
+          "description": "As an IT/legal team member, I need to review the system for compliance with data privacy regulations.",
+          "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+          "assignee_name": "satheesh",
+          "subtasks": [
+            {
+              "id": "IT-1-1",
+              "title": "Review Data Privacy Policies",
+              "description": "Document and review privacy policies.",
+              "assignee": "712020:73d689d5-2ee3-45a6-9a9d-e6b3bce3dcda",
+              "assignee_name": "babu"
+            },
+            {
+              "id": "IT-1-2",
+              "title": "Compliance Audit",
+              "description": "Audit system for regulatory compliance.",
+              "assignee": "712020:d85fee80-33e7-47e6-9060-cf1e53380d45",
+              "assignee_name": "satheesh"
+            }
+          ]
+        },
+        {
+          "id": "DEVOPS-4",
+          "title": "Load and Performance Testing",
+          "description": "As a DevOps/QA engineer, I need to test the system under load to ensure it supports 500 concurrent users.",
+          "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+          "assignee_name": "ashwin",
+          "subtasks": [
+            {
+              "id": "DEVOPS-4-1",
+              "title": "Develop Load Test Scripts",
+              "description": "Create scripts to simulate concurrent users.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            },
+            {
+              "id": "DEVOPS-4-2",
+              "title": "Execute Load Tests",
+              "description": "Run load tests and analyze results.",
+              "assignee": "712020:f3df4329-0746-45c4-ab49-dd67f1471c93",
+              "assignee_name": "ashwin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
