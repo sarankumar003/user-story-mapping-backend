@@ -41,7 +41,7 @@ else:
     cors_origins = [origin.strip() for origin in origins]
 
 # Add local development origins
-origins.extend([
+cors_origins.extend([
     "https://userstorymapping.tngrm.ai/",
     "https://user-story-mapping-frontend.vercel.app/",
     "http://localhost:3000"  # For local development
@@ -49,7 +49,7 @@ origins.extend([
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
