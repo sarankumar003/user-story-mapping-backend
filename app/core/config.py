@@ -28,19 +28,19 @@ try:
     )
 except ImportError:
     # Fallback values if config.py is not available
-    API_BASE_URL = "http://localhost:8001"
+    API_BASE_URL = "http://localhost:8000"
     FRONTEND_URL = "http://localhost:3000"
     ENVIRONMENT = "development"
     OPENAI_API_KEY = ""
     OPENAI_MODEL = "gpt-4"
     JIRA_BASE_URL = "https://crayonhackathon2025.atlassian.net"
-    JIRA_USERNAME = ""
+    JIRA_USERNAME = "saranbharathi22333@gmail.com"
     JIRA_API_TOKEN = ""
     JIRA_PROJECT_KEY = "CRAYOT"
     STORAGE_BASE_PATH = "./data/runs"
     UPLOAD_MAX_SIZE = 10 * 1024 * 1024  # 10MB
-    ALLOWED_FILE_TYPES = [".pdf", ".docx", ".doc"]
-    ALLOWED_ORIGINS = ["http://localhost:3000"]
+    ALLOWED_FILE_TYPES = ".pdf", ".docx", ".doc"
+    ALLOWED_ORIGINS = ""
     MAX_RUN_HISTORY = 50
 
 
